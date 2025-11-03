@@ -39,7 +39,7 @@ To be continued ...
 <tbody>
   <tr>
     <td style="width:130px; vertical-align: top; padding: 4px 5px;">2023.02-Now</td>
-    <td style="vertical-align: top; padding: 4px 5px;"><a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/SCNU-logo.svg" width="26pt"></a> Ph.D Candidate in Computer Science&nbsp;&nbsp;<em>Victoria University of Wellington, Wellington, New Zealand</em><br><em>Supervisors: <a href="https://people.wgtn.ac.nz/hui.ma">A/Prof. Hui Ma</a>, <a href="https://people.wgtn.ac.nz/aaron.chen">A/Prof. Aaron Chen</a></em></td>
+    <td style="vertical-align: top; padding: 4px 5px;"><a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="26pt"></a> Ph.D Candidate in Computer Science&nbsp;&nbsp;<em>Victoria University of Wellington, Wellington, New Zealand</em><br><em>Supervisors: <a href="https://people.wgtn.ac.nz/hui.ma">A/Prof. Hui Ma</a>, <a href="https://people.wgtn.ac.nz/aaron.chen">A/Prof. Aaron Chen</a></em></td>
   </tr>
   <tr>
     <td style="vertical-align: top; padding: 4px 5px;">2019.09-2021.12</td>

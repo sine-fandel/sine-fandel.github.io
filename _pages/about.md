@@ -29,7 +29,6 @@ To be continued ...
 - *2015.09 - 2019.07*, Bachelor of Engineering in Network Engineering, South China Normal University, Guangzhou, China
 
 <div style="line-height:1.5;">
-
 **2023.02 - now**  
 🎓 <b>Ph.D. Candidate in Computer Science</b>  
 <em>Victoria University of Welling, Wellington, New Zealand</em>  
@@ -45,3 +44,4 @@ Supervisors: <b>A/Prof. Mingcheng Qu</b>
 **2015.09 - 2019.07**  
 ⚙️ <b>B.Eng in Network Engineering</b>  
 <em>South China Normal University, Guangzhou, China</em>
+</div>

@@ -43,11 +43,11 @@ To be continued ...
   </tr>
   <tr>
     <td style="vertical-align: top; padding: 4px 5px;">2019.09-2021.12</td>
-    <td style="vertical-align: top; padding: 4px 5px;"> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/VUW-logo.svg" width="60pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institute of Technology, Harbin, China</em><br><em>Supervisors: <a href="https://homepage.hit.edu.cn/qmc">A/Prof. Mingcheng Qu</a>,
+    <td style="vertical-align: top; padding: 4px 5px;"> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/VUW-logo.svg" width="60pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institute of Technology, Harbin, China</em><br><em>Supervisors: <a href="https://homepage.hit.edu.cn/qmc">A/Prof. Mingcheng Qu</a></em></td>
   </tr>
   <tr>
     <td style="vertical-align: top; padding: 4px 5px;">2015.09-2019.07</td>
-    <td style="vertical-align: top; padding: 4px 5px;"><a href="https://www.lynu.edu.cn/"><img class="svg" src="/images/LuoyangNU-logo.svg" width="23pt"></a> B.Eng in Network Engineering&nbsp;&nbsp;<em>South China Normal University, Guangzhou, China</em></td>
+    <td style="vertical-align: top; padding: 4px 5px;"><a href="https://www.scnu.edu.cn/"><img class="svg" src="/images/SCNU-logo.svg" width="23pt"></a> B.Eng in Network Engineering&nbsp;&nbsp;<em>South China Normal University, Guangzhou, China</em></td>
   </tr>
 </tbody>
 </table>

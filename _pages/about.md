@@ -43,7 +43,7 @@ To be continued ...
   </tr>
   <tr>
     <td style="vertical-align: top; padding: 4px 5px;">2019.09-2021.12</td>
-    <td style="vertical-align: top; padding: 4px 5px;"> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/VUW-logo.svg" width="60pt"></a> <a href="https://ecs.wgtn.ac.nz/Groups/ECRG/WebHome"><img class="png" src="/images/ECRG_picture.png" width="40pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institu of Technology, Harbin, China</em><br><em>Supervisors: <a href="https://meiyi1986.github.io/">A/Prof. Mingcheng Qui</a>,
+    <td style="vertical-align: top; padding: 4px 5px;"> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/VUW-logo.svg" width="60pt"></a><img class="png" src="/images/ECRG_picture.png" width="40pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institu of Technology, Harbin, China</em><br><em>Supervisors: <a href="https://meiyi1986.github.io/">A/Prof. Mingcheng Qui</a>,
   </tr>
   <tr>
     <td style="vertical-align: top; padding: 4px 5px;">2015.09-2019.07</td>

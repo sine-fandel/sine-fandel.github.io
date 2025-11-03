@@ -43,7 +43,7 @@ To be continued ...
   </tr>
   <tr>
     <td style="vertical-align: top; padding: 4px 5px;">2019.09-2021.12</td>
-    <td style="vertical-align: top; padding: 4px 5px;"> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/VUW-logo.svg" width="60pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institute of Technology, Harbin, China</em><br><em>Supervisors: <a href="https://homepage.hit.edu.cn/qmc">A/Prof. Mingcheng Qui</a>,
+    <td style="vertical-align: top; padding: 4px 5px;"> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/VUW-logo.svg" width="60pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institute of Technology, Harbin, China</em><br><em>Supervisors: <a href="https://homepage.hit.edu.cn/qmc">A/Prof. Mingcheng Qu</a>,
   </tr>
   <tr>
     <td style="vertical-align: top; padding: 4px 5px;">2015.09-2019.07</td>

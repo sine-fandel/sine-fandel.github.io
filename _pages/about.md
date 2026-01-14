@@ -27,9 +27,8 @@ To be continued ...
 - *2022.02*: &nbsp;🎉🎉 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet.  -->
 
 # 📝 Publications 
-
-To be continued ...
-
+, HGraphScale: Hierarchical Graph Learning for Autoscaling Microservice Applications in Container-based Cloud Computing
+1. `Zhengxin Fang`, Hui Ma, Gang Chen, and Rajkumar Buyya, “Hierarchical Graph Learning for Autoscaling Microservice Applications in Container-based Cloud Computing,” *IEEE Transactions on Services Computing*. Accept on Jan. 2026. (<span style="color:red">CCF A, TOP Journal</span>)
 
 <!-- # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 

@@ -28,7 +28,9 @@ To be continued ...
 
 # 📝 Publications 
 , HGraphScale: Hierarchical Graph Learning for Autoscaling Microservice Applications in Container-based Cloud Computing
-1. `Zhengxin Fang`, Hui Ma, Gang Chen, and Rajkumar Buyya, “Hierarchical Graph Learning for Autoscaling Microservice Applications in Container-based Cloud Computing,” *IEEE Transactions on Services Computing*. Accept on Jan. 2026. (<span style="color:red">CCF A, TOP Journal</span>)
+1. `Zhengxin Fang`, Hui Ma, Gang Chen, and Rajkumar Buyya, “Hierarchical Graph Learning for Autoscaling Microservice Applications in Container-based Cloud Computing” *IEEE Transactions on Services Computing (TSC)*. Accept on Jan. 2026. (<span style="color:red">CCF A, TOP Journal</span>)
+2. `Zhengxin Fang`, Hui Ma, Gang Chen, Sven Hartmann, “Energy-efficient and communication-aware resource allocation in container-based cloud with group genetic algorithm” *International Conference on Service-Oriented Computing (ICSOC)*, [doi:10.1007/978-3-031-48421-6_15](https://doi.org/10.1007/978-3-031-48421-6_15) Accept on Nov. 2023. [pdf] <a href="#" class="bib-link" data-paper="Sun2025-TSC">[cite]</a> (<span style="color:red">CCF B</span>)
+
 
 <!-- # 🎖 Honors and Awards
 - *2021.10* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ornare aliquet ipsum, ac tempus justo dapibus sit amet. 

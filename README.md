@@ -107,8 +107,10 @@ institution, email, Google Scholar, ORCID when `author.orcid` is set, GitHub, we
 left column is widened to 21% on desktop and the round avatar is 140px (`site-extras.css`);
 sidebar type is 1.2rem (name) / 0.96rem (position and icon rows). On narrow screens the link
 list is forced visible
-(the theme normally hides it with an inline `display:none`). The institution row uses the official
-SIAT round emblem from `images/SIAT-logo.png` (source: `www.siat.ac.cn/images/szxjy-logoicon.png`).
+(the theme normally hides it with an inline `display:none`). All rows use monochrome Font Awesome /
+Academicons glyphs; the institution row is the generic `fas fa-university` icon. The official
+SIAT round emblem (`images/SIAT-logo.png`, source: `www.siat.ac.cn/images/szxjy-logoicon.png`)
+is only used in the Experience timeline rows.
 
 `profile_show_avatar: false` in `_config.yml` switches to text-only (no photo). To add your
 ORCID row, fill in `author.orcid` with the full profile URL — the row is otherwise omitted.

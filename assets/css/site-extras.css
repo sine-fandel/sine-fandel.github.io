@@ -174,19 +174,6 @@ html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
 }
 .sidebar .profile_box--clean .profile-links__icon--orcid { color: #a6ce39; }
 .sidebar .profile_box--clean .profile-links__icon--github { color: #24292e; }
-/* Official SIAT round emblem used instead of a generic building icon. */
-.sidebar .profile_box--clean .profile-links__logo {
-  flex: 0 0 1.18rem;
-  width: 1.18rem;
-  height: 1.18rem;
-  margin: 0.12rem 0 0;
-  padding: 0;
-  object-fit: contain;
-  border: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-
 .sidebar .profile_box--clean .author__urls .profile-links__text {
   display: inline;
   margin: 0;

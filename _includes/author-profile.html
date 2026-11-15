@@ -38,7 +38,7 @@
 
       {% if author.employer %}
       <li class="profile-links__item">
-        <img class="profile-links__logo" src="/images/SIAT-logo.png" alt="Institution emblem">
+        <i class="fas fa-fw fa-university profile-links__icon" aria-hidden="true"></i>
         {% if author.employer_url %}
         <a class="profile-links__text" href="{{ author.employer_url }}" target="_blank" rel="noopener" itemprop="affiliation">
           <span class="lang-inline" data-lang="en">{{ author.employer }}</span>

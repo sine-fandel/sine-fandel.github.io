@@ -1,0 +1,14 @@
+<!-- Runtime config for the auto-synced publication list + bilingual UI. -->
+<script>
+  window.SCHOLAR_CONFIG = {
+    repository: "{{ site.repository }}",
+    statsBranch: "google-scholar-stats",
+    preferCdn: {{ site.google_scholar_stats_use_cdn | default: false }},
+    localSnapshot: "{{ '/assets/data/scholar.json' | relative_url }}",
+    extrasUrl: "{{ '/assets/data/publication-links.json' | relative_url }}",
+    scholarId: "{{ site.scholar_id | default: 'Y3LoyksAAAAJ' }}",
+    scholarUrl: "https://scholar.google.com/citations?user={{ site.scholar_id | default: 'Y3LoyksAAAAJ' }}&hl=en"
+  };
+</script>
+<script src="{{ '/assets/js/i18n.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/scholar-publications.js' | relative_url }}"></script>

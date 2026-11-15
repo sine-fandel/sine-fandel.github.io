@@ -1,2 +1,7 @@
+# Primary strategy: direct, single-request HTML scrape
+requests>=2.31,<3
+beautifulsoup4>=4.12,<5
+
+# Fallback strategy (optional: the crawler degrades gracefully if unavailable)
 jsonpickle==1.4.2
 scholarly==1.5.1

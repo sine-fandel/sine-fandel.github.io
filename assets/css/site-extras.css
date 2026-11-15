@@ -1,0 +1,206 @@
+/* ==========================================================================
+   Site extras: bilingual UI + auto-synced publications
+   Loaded after main.css (see _includes/head/custom.html).
+   ========================================================================== */
+
+[hidden] { display: none !important; }
+
+/* --- Language visibility ------------------------------------------------ */
+/* English is the default when JavaScript is unavailable. */
+[data-lang="zh"] { display: none !important; }
+html.lang-zh [data-lang="en"] { display: none !important; }
+html.lang-zh [data-lang="zh"] { display: revert !important; }
+html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
+
+/* --- Masthead language switch ------------------------------------------ */
+.masthead .greedy-nav li.lang-switch {
+  padding-left: 0.75rem;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+.masthead .greedy-nav .lang-switch button {
+  position: static;
+  height: auto;
+  width: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0.2rem 0.35rem;
+  border: 0;
+  border-radius: 4px;
+  background: transparent;
+  color: #7a8288;
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1.4;
+  cursor: pointer;
+  transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.masthead .greedy-nav .lang-switch button:hover { color: #224b8d; }
+.masthead .greedy-nav .lang-switch button.is-active {
+  color: #fff;
+  background: #224b8d;
+}
+.masthead .greedy-nav .lang-switch .lang-switch__sep {
+  color: #c9ced2;
+  padding: 0 0.1rem;
+  font-size: 0.85rem;
+}
+.masthead .greedy-nav .lang-switch__label {
+  margin-right: 0.35rem;
+  color: #9aa3a9;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+@media (max-width: 600px) {
+  .masthead .greedy-nav .lang-switch__label { display: none; }
+}
+
+/* --- Sidebar ------------------------------------------------------------- */
+.author__bio { line-height: 1.5; }
+.author__urls.social-icons li { white-space: normal; }
+
+/* --- Page headings ------------------------------------------------------- */
+.page__content h1.section-heading { margin-top: 1.4em; }
+.page__content .section-intro { margin: 0.25em 0 1em; line-height: 1.7; }
+.page__content .positions-table td {
+  vertical-align: top;
+  padding: 6px 8px;
+  border-bottom: 1px solid #f0f2f4;
+}
+.page__content .positions-table td:first-child { white-space: nowrap; width: 130px; color: #5c666d; }
+
+/* --- Citation metric cards ---------------------------------------------- */
+.scholar-stats {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+  margin: 1.1rem 0 0.6rem;
+}
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 0.4rem;
+  border: 1px solid #e6eaee;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+.stat-card__value { font-size: 1.55rem; font-weight: 700; color: #224b8d; line-height: 1.15; }
+.stat-card__label { margin-top: 0.25rem; font-size: 0.78rem; color: #68737b; text-align: center; }
+.pub-sync-note { font-size: 0.8rem; color: #7a8288; margin: 0.5rem 0 1rem; line-height: 1.6; }
+.pub-sync-note a { text-decoration: none; }
+.pub-sync-note__fallback { color: #b26a00; }
+
+/* --- Toolbar -------------------------------------------------------------- */
+.pub-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1rem;
+}
+.pub-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.pub-filter {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 999px;
+  background: #fff;
+  color: #5c666d;
+  font-family: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+.pub-filter:hover { border-color: #224b8d; color: #224b8d; }
+.pub-filter.is-active { border-color: #224b8d; background: #224b8d; color: #fff; }
+.pub-search {
+  flex: 1 1 190px;
+  min-width: 150px;
+  padding: 0.35rem 0.7rem;
+  border: 1px solid #d9e0e7;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.8rem;
+  color: #3d464d;
+  outline: none;
+}
+.pub-search:focus { border-color: #224b8d; box-shadow: 0 0 0 2px rgba(34, 75, 141, 0.12); }
+.pub-count { font-size: 0.8rem; color: #7a8288; white-space: nowrap; }
+
+/* --- Publication list ---------------------------------------------------- */
+.pub-year { margin-bottom: 1.4rem; }
+.pub-year__heading {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 0 0.55rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid #e6eaee;
+  font-size: 1.05rem;
+  color: #3d464d;
+}
+.pub-year__count {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #7a8288;
+  background: #f0f3f6;
+  border-radius: 999px;
+  padding: 0.05rem 0.45rem;
+}
+.pub-item {
+  padding: 0.7rem 0 0.8rem;
+  border-bottom: 1px solid #f1f3f5;
+}
+.pub-item:last-child { border-bottom: 0; }
+.pub-item__title { font-size: 0.98rem; font-weight: 600; line-height: 1.45; }
+.pub-item__title a { color: #224b8d; text-decoration: none; }
+.pub-item__title a:hover { text-decoration: underline; }
+.pub-item__authors { margin-top: 0.25rem; font-size: 0.85rem; color: #4c565d; }
+.pub-item__authors .pub-self { color: #1d3f6b; font-weight: 700; }
+.pub-item__venue { margin-top: 0.15rem; font-size: 0.85rem; font-style: italic; color: #6b757d; }
+.pub-item__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.4rem;
+  font-size: 0.76rem;
+}
+.pub-item__type {
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  background: #eef2f7;
+  color: #4c627f;
+}
+.pub-item__type--journal { background: #eaf3ec; color: #2f6b45; }
+.pub-item__type--conference { background: #eef0fb; color: #4a4f9c; }
+.pub-item__type--preprint { background: #fdf1e6; color: #a2601d; }
+.pub-item__citations { color: #7a8288; }
+.pub-link {
+  padding: 0.05rem 0.45rem;
+  border: 1px solid #dde3e9;
+  border-radius: 4px;
+  color: #5c666d;
+  text-decoration: none;
+}
+.pub-link:hover { border-color: #224b8d; color: #224b8d; text-decoration: none; }
+.pub-badge {
+  padding: 0.05rem 0.45rem;
+  border-radius: 4px;
+  background: #fdecec;
+  color: #b23b3b;
+  font-weight: 600;
+}
+.pub-empty, .pub-loading { color: #7a8288; font-size: 0.9rem; padding: 0.8rem 0; }
+.pub-footer { font-size: 0.85rem; margin-top: 0.5rem; }
+.pub-footer a { text-decoration: none; }
+
+@media (max-width: 600px) {
+  .scholar-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pub-count { width: 100%; }
+}

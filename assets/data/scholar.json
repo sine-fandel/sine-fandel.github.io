@@ -1,0 +1,174 @@
+{
+  "schema_version": 2,
+  "updated": "2026-11-15T09:54:45Z",
+  "source": "https://scholar.google.com/citations?user=Y3LoyksAAAAJ&hl=en",
+  "fetch_strategy": "snapshot",
+  "scholar_id": "Y3LoyksAAAAJ",
+  "name": "Zhengxin Fang",
+  "affiliation": "Ph.D. candidate, Victoria University of Wellington",
+  "interests": [
+    "Cloud Computing",
+    "Service Computing",
+    "Reinforcement Learning",
+    "Evolutionary Computation"
+  ],
+  "metrics": {
+    "citations": 80,
+    "citations_recent": 79,
+    "h_index": 5,
+    "h_index_recent": 5,
+    "i10_index": 2,
+    "i10_index_recent": 2
+  },
+  "citedby": 80,
+  "hindex": 5,
+  "publication_count": 12,
+  "publications": [
+    {
+      "id": "Y3LoyksAAAAJ:5nxA0vEk-isC",
+      "title": "DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification",
+      "authors": "R Chen, M Xu, Z Fang, K Ye, C Xu",
+      "venue": "arXiv preprint arXiv:2609.37532",
+      "year": 2026,
+      "citations": 0,
+      "type": "preprint",
+      "eprint_url": "https://arxiv.org/abs/2609.37532",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:5nxA0vEk-isC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:0EnyYjriUFMC",
+      "title": "BrownoutMoE: Structure-Aware Expert Grouping for Efficient and Accurate LLM Web-based Services",
+      "authors": "Y Ding, M Xu, Z Fang, K Ye, C Xu",
+      "venue": "arXiv preprint arXiv:2607.04164",
+      "year": 2026,
+      "citations": 0,
+      "type": "preprint",
+      "eprint_url": "https://arxiv.org/abs/2607.04164",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:0EnyYjriUFMC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:LkGwnXOMwfcC",
+      "title": "Star: Spatial-Temporal Autoscaling for Cloud Applications Via Deep Reinforcement Learning",
+      "authors": "Z Fang, H Ma, G Chen, S Chen",
+      "venue": "Expert Systems with Applications",
+      "year": 2026,
+      "citations": 0,
+      "type": "journal",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:LkGwnXOMwfcC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:hqOjcs7Dif8C",
+      "title": "Dynamic Microservice Applications Deployment in Clouds Based on Multi-Tasking Genetic Programming",
+      "authors": "Z Fang, H Ma, G Chen, S Hartmann",
+      "venue": "IEEE Transactions on Cloud Computing",
+      "year": 2026,
+      "citations": 0,
+      "type": "journal",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:hqOjcs7Dif8C"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:Se3iqnhoufwC",
+      "title": "HGraphScale: Hierarchical Graph Learning for Autoscaling Microservice Applications in Container-based Cloud Computing",
+      "authors": "Z Fang, H Ma, G Chen, R Buyya",
+      "venue": "IEEE Transactions on Service Computing",
+      "year": 2026,
+      "citations": 18,
+      "type": "journal",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:Se3iqnhoufwC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:_FxGoFyzp5QC",
+      "title": "A communication-aware and energy-efficient genetic programming based method for dynamic resource allocation in clouds",
+      "authors": "Z Fang, H Ma, G Chen, S Hartmann, S Chen",
+      "venue": "International Conference on the Applications of Evolutionary Computation",
+      "year": 2025,
+      "citations": 4,
+      "type": "conference",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:_FxGoFyzp5QC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:ufrVoPGSRksC",
+      "title": "Leveraging llm in genetic programming hyper-heuristics for dynamic microservice deployment",
+      "authors": "Z Fang, H Ma, G Chen, S Hartmann, C Wang",
+      "venue": "Australasian Joint Conference on Artificial Intelligence, 86-97",
+      "year": 2024,
+      "citations": 5,
+      "type": "conference",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:ufrVoPGSRksC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:WF5omc3nYNoC",
+      "title": "Multi-Objective Optimization of Application Deployment Strategies in Integrated Cloud-Fog Computing Environments",
+      "authors": "Z Han, C Wang, Z Fang, H Ma, G Chen",
+      "venue": "2024 IEEE International Conference on Software Services Engineering (SSE)",
+      "year": 2024,
+      "citations": 1,
+      "type": "conference",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:WF5omc3nYNoC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:Y0pCki6q_DkC",
+      "title": "A group genetic algorithm for energy-efficient resource allocation in container-based clouds with heterogeneous physical machines",
+      "authors": "Z Fang, H Ma, G Chen, S Hartmann",
+      "venue": "Australasian Joint Conference on Artificial Intelligence, 453-465",
+      "year": 2023,
+      "citations": 8,
+      "type": "conference",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:Y0pCki6q_DkC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:Tyk-4Ss8FVUC",
+      "title": "Energy-efficient and communication-aware resource allocation in container-based cloud with group genetic algorithm",
+      "authors": "Z Fang, H Ma, G Chen, S Hartmann",
+      "venue": "International Conference on Service-Oriented Computing, 212-226",
+      "year": 2023,
+      "citations": 8,
+      "type": "conference",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:Tyk-4Ss8FVUC"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:d1gkVwhDpl0C",
+      "title": "Mlops spanning whole machine learning life cycle: A survey",
+      "authors": "Z Fang, Y Yuan, J Zhang, Y Liu, Y Mu, Q Lu, X Xu, J Wang, C Wang, ...",
+      "venue": "arXiv preprint arXiv:2304.07296",
+      "year": 2023,
+      "citations": 36,
+      "type": "preprint",
+      "eprint_url": "https://arxiv.org/abs/2304.07296",
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:d1gkVwhDpl0C"
+    },
+    {
+      "id": "Y3LoyksAAAAJ:u-x6o8ySG0sC",
+      "title": "HFM++: An Enhanced Holographic Factorization Machine for Recommendation",
+      "authors": "Z Fang, M Qu, S Zhang, J Zhang, Y Yuan, L Yao, S Chen",
+      "venue": "Australasian Conference on Data Mining, 72-85",
+      "year": 2021,
+      "citations": 0,
+      "type": "conference",
+      "eprint_url": null,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&citation_for_view=Y3LoyksAAAAJ:u-x6o8ySG0sC"
+    }
+  ],
+  "publication_index": {
+    "Y3LoyksAAAAJ:5nxA0vEk-isC": { "num_citations": 0, "title": "DScale: Scaling Block-Diffusion Speculative Decoding with Adaptive Verification" },
+    "Y3LoyksAAAAJ:0EnyYjriUFMC": { "num_citations": 0, "title": "BrownoutMoE: Structure-Aware Expert Grouping for Efficient and Accurate LLM Web-based Services" },
+    "Y3LoyksAAAAJ:LkGwnXOMwfcC": { "num_citations": 0, "title": "Star: Spatial-Temporal Autoscaling for Cloud Applications Via Deep Reinforcement Learning" },
+    "Y3LoyksAAAAJ:hqOjcs7Dif8C": { "num_citations": 0, "title": "Dynamic Microservice Applications Deployment in Clouds Based on Multi-Tasking Genetic Programming" },
+    "Y3LoyksAAAAJ:Se3iqnhoufwC": { "num_citations": 18, "title": "HGraphScale: Hierarchical Graph Learning for Autoscaling Microservice Applications in Container-based Cloud Computing" },
+    "Y3LoyksAAAAJ:_FxGoFyzp5QC": { "num_citations": 4, "title": "A communication-aware and energy-efficient genetic programming based method for dynamic resource allocation in clouds" },
+    "Y3LoyksAAAAJ:ufrVoPGSRksC": { "num_citations": 5, "title": "Leveraging llm in genetic programming hyper-heuristics for dynamic microservice deployment" },
+    "Y3LoyksAAAAJ:WF5omc3nYNoC": { "num_citations": 1, "title": "Multi-Objective Optimization of Application Deployment Strategies in Integrated Cloud-Fog Computing Environments" },
+    "Y3LoyksAAAAJ:Y0pCki6q_DkC": { "num_citations": 8, "title": "A group genetic algorithm for energy-efficient resource allocation in container-based clouds with heterogeneous physical machines" },
+    "Y3LoyksAAAAJ:Tyk-4Ss8FVUC": { "num_citations": 8, "title": "Energy-efficient and communication-aware resource allocation in container-based cloud with group genetic algorithm" },
+    "Y3LoyksAAAAJ:d1gkVwhDpl0C": { "num_citations": 36, "title": "Mlops spanning whole machine learning life cycle: A survey" },
+    "Y3LoyksAAAAJ:u-x6o8ySG0sC": { "num_citations": 0, "title": "HFM++: An Enhanced Holographic Factorization Machine for Recommendation" }
+  }
+}

@@ -9,6 +9,9 @@
 title                    : "Zhengxin Fang's Homepage"
 description              : ""
 repository               : "sine-fandel/sine-fandel.github.io"
+# Google Scholar user id used by the sync workflow and the publication list.
+scholar_id               : "Y3LoyksAAAAJ"
+# true = prefer jsDelivr CDN for the synced JSON, false = prefer raw.githubusercontent.com
 google_scholar_stats_use_cdn : true
 
 # google analytics
@@ -22,12 +25,16 @@ baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.ba
 # Site Author
 author:
   name             : "Zhengxin Fang"
+  name_zh          : "方正心"
   avatar           : "images/android-chrome-512x512.png"
-  bio              : "Ph.D. Candidate of Victoria University of Wellington"
-  location         : "Guangdong, China"
+  bio              : "Assistant Researcher / Postdoctoral Researcher, SIAT, Chinese Academy of Sciences"
+  bio_en           : "Assistant Researcher / Postdoctoral Researcher, Shenzhen Institutes of Advanced Technology (SIAT), Chinese Academy of Sciences"
+  bio_zh           : "中国科学院深圳先进技术研究院（SIAT）助理研究员 / 博士后研究员"
+  location         : "Shenzhen, Guangdong, China"
+  location_zh       : "中国 · 广东 · 深圳"
   employer         :
-  pubmed           : 
-  googlescholar    : "https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID"
+  pubmed           :
+  googlescholar    : "https://scholar.google.com/citations?user=Y3LoyksAAAAJ&hl=en"
   email            : "zhengxin.fang@ecs.vuw.ac.nz"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -37,7 +44,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : # e.g., "github username"
+  github           : "sine-fandel"
   google_plus      :
   keybase          :
   instagram        :

@@ -8,6 +8,22 @@
 <meta name="msapplication-config" content="images/browserconfig.xml?v=M44lzPylqQ">
 <meta name="theme-color" content="#ffffff">
 <link rel="stylesheet" href="assets/css/academicons.css"/>
+<link rel="stylesheet" href="/assets/css/site-extras.css"/>
+
+<!-- Decide the language before first paint to avoid a flash of the wrong text. -->
+<script>
+(function () {
+  var fromUrl = null;
+  try { fromUrl = new URLSearchParams(window.location.search).get('lang'); } catch (e) {}
+  var saved = null;
+  try { saved = window.localStorage.getItem('site-lang'); } catch (e) {}
+  var lang = (fromUrl === 'en' || fromUrl === 'zh') ? fromUrl
+           : (saved === 'en' || saved === 'zh') ? saved
+           : (/^zh\b/i.test(window.navigator.language || '') ? 'zh' : 'en');
+  document.documentElement.className += ' lang-' + lang;
+  document.documentElement.lang = (lang === 'zh' ? 'zh-CN' : 'en');
+})();
+</script>
 
 <script type="text/x-mathjax-config"> MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } }); </script>
 <script type="text/x-mathjax-config">

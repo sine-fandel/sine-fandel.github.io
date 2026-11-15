@@ -1,0 +1,10 @@
+{
+  "_comment": "Hand-curated extras keyed by Google Scholar citation id. The crawler never touches this file, so DOI links and venue badges survive automatic publication syncs.",
+  "Y3LoyksAAAAJ:Se3iqnhoufwC": {
+    "badges": ["CCF A", "Top Journal"]
+  },
+  "Y3LoyksAAAAJ:Tyk-4Ss8FVUC": {
+    "doi": "10.1007/978-3-031-48421-6_15",
+    "badges": ["CCF B"]
+  }
+}

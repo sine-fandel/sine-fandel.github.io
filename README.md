@@ -1,72 +1,99 @@
+# Zhengxin Fang — Academic Homepage
 
-<h1 align="center">
-AcadHomepage
-</h1>
+Personal homepage for **Zhengxin Fang (方正心)**, Assistant Researcher / Postdoctoral Researcher at the
+[Shenzhen Institutes of Advanced Technology (SIAT)](https://www.siat.ac.cn/), Chinese Academy of Sciences.
 
-<div align="center">
+Published at **https://sine-fandel.github.io/**
 
-[![](https://img.shields.io/github/stars/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/forks/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/issues/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io)
-[![](https://img.shields.io/github/license/RayeRen/acad-homepage.github.io)](https://github.com/RayeRen/acad-homepage.github.io/blob/main/LICENSE)  | [中文文档](./docs/README-zh.md) 
-</div>
+Built with Jekyll and hosted on GitHub Pages. Based on [AcadHomepage](https://github.com/RayeRen/acad-homepage.github.io),
+which is itself influenced by Minimal Mistakes and academicpages.
 
-<p align="center">A Modern and Responsive Academic Personal Homepage</p>
+## Key features
 
-<p align="center">
-    <br>
-    <img src="docs/screenshot.png" width="100%"/>
-    <br>
-</p>
+- **Publications auto-synced with Google Scholar** — the publication list and citation metrics are
+  generated from the Scholar profile, not hand-edited. A GitHub Action refreshes the data daily.
+- **Bilingual EN / 中文** — every section, navigation item, label and the publication UI switches
+  language instantly; the choice is remembered and can be shared with `?lang=zh`.
+- **Resilient by design** — the site ships with a committed Scholar snapshot, so the publication
+  list still renders if Scholar, GitHub or the CDN is temporarily unavailable.
+- Responsive layout, Font Awesome / Academicons icons, SEO metadata, Google Analytics support.
 
-Some examples:
-- [Demo Page](https://rayeren.github.io/acad-homepage.github.io/)
-- [Personal Homepage of the author](https://rayeren.github.io/)
+## How the Scholar sync works
 
-## Key Features
-- **Automatically update google scholar citations**: using the google scholar crawler and github action, this REPO can update the author citations and publication citations automatically.
-- **Support Google analytics**: you can trace the traffics of your homepage by easy configuration.
-- **Responsive**: this homepage automatically adjust for different screen sizes and viewports.
-- **Beautiful and Simple Design**: this homepage is beautiful and simple, which is very suitable for academic personal homepage.
-- **SEO**: search Engine Optimization (SEO) helps search engines find the information you publish on your homepage easily, then rank it against similar websites.
+```
+Google Scholar profile  ──(GitHub Action, daily 08:00 UTC)──▶  google-scholar-stats/gs_data.json
+                                                                  │
+                                   raw.githubusercontent.com ────┤
+                                   cdn.jsdelivr.net ──────────────┼──▶  homepage (client-side render)
+                                   /assets/data/scholar.json ──────┘     (committed fallback snapshot)
+```
 
-## Quick Start
+1. `.github/workflows/google_scholar_crawler.yaml` runs on `page_build`, on a daily cron, or on
+   manual `workflow_dispatch`.
+2. `google_scholar_crawler/main.py` fetches the profile. It first parses the public profile HTML
+   with `requests` + BeautifulSoup (one request, paginated), and falls back to the `scholarly`
+   package. If both fail it writes **nothing** and exits non-zero, so the last good data is never
+   overwritten.
+3. Valid results are pushed as `gs_data.json` + `gs_data_shieldsio.json` to the orphan branch
+   `google-scholar-stats`.
+4. `assets/js/scholar-publications.js` reads that JSON at runtime (raw GitHub → jsDelivr → local
+   snapshot) and renders the metric cards and year-grouped publication list into `#scholar-app`.
+   No Jekyll rebuild is needed when Scholar changes.
 
-1. Fork this REPO and rename to `USERNAME.github.io`, where `USERNAME` is your github USERNAME.
-1. Configure the google scholar citation crawler:
-    1. Find your google scholar ID in the url of your google scholar page (e.g., https://scholar.google.com/citations?user=SCHOLAR_ID), where `SCHOLAR_ID` is your google scholar ID.
-    1. Set GOOGLE_SCHOLAR_ID variable to your google scholar ID in `Settings -> Secrets -> Actions -> New repository secret` of the REPO website with `name=GOOGLE_SCHOLAR_ID` and `value=SCHOLAR_ID`.
-    1. Click the `Action` of the REPO website and enable the workflows by clicking *"I understand my workflows, go ahead and enable them"*. This github action will generate google scholar citation stats data `gs_data.json` in `google-scholar-stats` branch of your REPO. When you update your main branch, this action will be triggered. This action will also be trigger 08:00 UTC everyday.
-1. Generate favicon using [favicon-generator](https://redketchup.io/favicon-generator) and download all generated files to `REPO/images`.
-1. Modify the configuration of your homepage `_config.yml`:
-    1. `title`: the title of your homepage
-    1. `description`: the description of your homepage
-    1. `repository`: USER_NAME/REPO_NAME  
-    1. `google_analytics_id` (optional): google analytics ID
-    1. SEO Related keys (optional): get these keys from search engine consoles (e.g. Google, Bing and Baidu) and paste here.
-    1. `author`: the author information of this homepage, including some other websites, emails, city and univeristy.
-    1. More configuration details are described in the comments.
-1. Add your homepage content in `_pages/about.md`.
-    1. You can use html+markdown syntax just same as jekyll.
-    1. You can use a `<span>` tag with class `show_paper_citations` and attribute `data` to display the citations of your paper. Set the data to the google scholar paper ID. For
-        ```html
-        <span class='show_paper_citations' data='DhtAFkwAAAAJ:ALROH1vI_8AC'></span>
-        ``` 
-        > Q: How to get the google scholar paper ID?   
-        > A: Enter your google scholar homepage and click the paper name. Then you can see the paper ID from `citation_for_view=XXXX`, where `XXXX` is the required paper ID.
-1. Your page will be published at `https://USERNAME.github.io`.
+The Scholar id lives in `_config.yml` (`scholar_id`). Optionally set the repo secret
+`GOOGLE_SCHOLAR_ID` (`Settings → Secrets and variables → Actions`); if it is absent the workflow
+uses the configured id. To force a refresh, run the **Sync Google Scholar Data** workflow manually
+from the Actions tab.
 
-## Debug Locally
+### Files to edit for publications
 
-1. Clone your REPO to local using `git clone`.
-1. Install Jekyll building environment, including `Ruby`, `RubyGems`, `GCC` and `Make` following [the installation guide](https://jekyllrb.com/docs/installation/#requirements).
-1. Run `bash run_server.sh` to start Jekyll livereload server.
-1. Open http://127.0.0.1:4000 in your browser.
-1. If you change the source code of the website, the livereload server will automatically refresh.
-1. When you finish the modification of your homepage, `commit` your changings and `push` to your remote REPO using `git` command.
+| File | Purpose |
+| --- | --- |
+| `assets/data/scholar.json` | Committed fallback snapshot (normally maintained by the crawler). |
+| `assets/data/publication-links.json` | Hand-curated extras keyed by Scholar citation id: `doi` and `badges` (e.g. `CCF A`). The crawler never touches this file. |
+| `google_scholar_crawler/main.py` | Fetch / normalize logic. |
+| `.github/workflows/google_scholar_crawler.yaml` | Sync schedule. |
 
-# Acknowledges
+Add a `show_paper_citations` span with the Scholar paper id to display an individual citation count
+anywhere on the page (legacy feature, still supported):
 
-- AcadHomepage incorporates Font Awesome, which is distributed under the terms of the SIL OFL 1.1 and MIT License.
-- AcadHomepage is influenced by the github repo [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes), which is distributed under the MIT License.
-- AcadHomepage is influenced by the github repo [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io), which is distributed under the MIT License.
+```html
+<span class="show_paper_citations" data="Y3LoyksAAAAJ:d1gkVwhDpl0C"></span>
+```
+
+## Language switch
+
+- `assets/js/i18n.js` holds the EN/ZH dictionary and the switch logic.
+- `<html>` gets `lang-en` / `lang-zh` before first paint (inline snippet in
+  `_includes/head/custom.html`), so there is no flash of the wrong language.
+- `data-i18n="key"` swaps an element's text; `data-lang="en"` / `data-lang="zh"` wraps whole blocks;
+  `?lang=zh` forces a language; the last choice is stored in `localStorage`.
+- Navigation labels come from `_data/navigation.yml` (`title` / `title_zh`).
+- Sidebar bio / name / location come from `author.*` in `_config.yml` (`bio_en`, `bio_zh`,
+  `name_zh`, `location_zh`).
+
+## Edit content
+
+- `_pages/about.md` — homepage content (bilingual sections, appointments, education).
+- `_config.yml` — site title, author details, links, Scholar id, CDN preference.
+- `_data/navigation.yml` — top navigation.
+- `assets/css/site-extras.css` — all new styling for the language switch, metric cards and
+  publication list.
+
+## Run locally
+
+```bash
+bundle install
+bundle exec jekyll serve   # or: bash run_server.sh
+# open http://127.0.0.1:4000
+```
+
+The publication list works locally too: the remote data branch is optional, and the committed
+snapshot in `assets/data/scholar.json` is used as a fallback.
+
+## Acknowledgements
+
+- AcadHomepage incorporates Font Awesome (SIL OFL 1.1 / MIT).
+- Influenced by [mmistakes/minimal-mistakes](https://github.com/mmistakes/minimal-mistakes) and
+  [academicpages/academicpages.github.io](https://github.com/academicpages/academicpages.github.io)
+  (both MIT licensed).

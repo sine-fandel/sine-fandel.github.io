@@ -12,7 +12,8 @@ repository               : "sine-fandel/sine-fandel.github.io"
 # Google Scholar user id used by the sync workflow and the publication list.
 scholar_id               : "Y3LoyksAAAAJ"
 # true = prefer jsDelivr CDN for the synced JSON, false = prefer raw.githubusercontent.com
-google_scholar_stats_use_cdn : true
+# raw has a 5-minute cache (vs hours on the CDN), so false gives fresher sync.
+google_scholar_stats_use_cdn : false
 
 # google analytics
 google_analytics_id      :  # get google_analytics_id from https://analytics.google.com/analytics/

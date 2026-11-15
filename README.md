@@ -38,13 +38,19 @@ Google Scholar profile  ──(GitHub Action, daily 08:00 UTC)──▶  google-
 3. Valid results are pushed as `gs_data.json` + `gs_data_shieldsio.json` to the orphan branch
    `google-scholar-stats`. A blocked run does not fail the job: it preserves whatever is already
    on that branch and publishes `sync-status.json` plus a run-summary with the error log.
-   Google Scholar often rate-limits datacenter IPs; if that happens regularly, set an optional
-   `SCHOLAR_HTTP_PROXY` secret (any HTTP(S) proxy that can reach Scholar), or refresh from a
-   residential network with:
-   ```bash
-   cd google_scholar_crawler && pip install -r requirements.txt && python main.py
-   # then copy results/*.json into the google-scholar-stats branch and push
-   ```
+
+> **Note on Google Scholar rate limits.** Scholar blocks most cloud/datacenter IPs, including
+> GitHub-hosted runners, with HTTP 403/429. The daily Action therefore usually records a blocked
+> run and keeps the last good data. For a guaranteed fresh sync, run this from your own network:
+>
+> ```bash
+> ./sync_scholar.sh          # crawls Scholar and force-pushes the data branch
+> PYTHON=/path/to/python ./sync_scholar.sh   # optional interpreter override
+> ```
+>
+> Alternatively set a repo secret `SCHOLAR_HTTP_PROXY` to an HTTP(S) proxy that can reach Scholar,
+> and the scheduled Action will use it. `GOOGLE_SCHOLAR_ID` is optional (defaults to `scholar_id`
+> in `_config.yml`).
 4. `assets/js/scholar-publications.js` reads that JSON at runtime (raw GitHub → jsDelivr → local
    snapshot) and renders the metric cards and year-grouped publication list into `#scholar-app`.
    No Jekyll rebuild is needed when Scholar changes.

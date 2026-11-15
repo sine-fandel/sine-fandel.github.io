@@ -77,7 +77,7 @@ redirect_from:
 <table class="positions-table"><tbody>
   <tr>
     <td>2026.12-至今</td>
-    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="中国科学院深圳先进技术研究院院徽"></a> <span class="exp-org">中国科学院深圳先进技术研究院</span><span class="exp-sep">&middot;</span><span class="exp-unit">数字所</span><span class="exp-sep">&middot;</span><span class="exp-role">助理研究员 / 博士后研究员</span><span class="exp-sep">&middot;</span><span class="exp-loc">中国深圳</span></td>
+    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="中国科学院深圳先进技术研究院院徽"></a> <span class="exp-org">中国科学院深圳先进技术研究院</span><span class="exp-sep">&middot;</span><span class="exp-unit">数字所</span><span class="exp-sep">&middot;</span><span class="exp-role">助理研究员 / 博士后研究员</span><span class="exp-sep">&middot;</span><span class="exp-loc">中国 深圳</span></td>
   </tr>
   <tr>
     <td>2023.02-2026.11</td>

@@ -126,7 +126,7 @@ ORCID row, fill in `author.orcid` with the full profile URL — the row is other
   `.exp-org` + `.exp-unit` + `.exp-role` + `.exp-loc`). The school/institute labels are
   `数字所` / `ECS` / `计算学部` / `计算机学院` in Chinese and the official English names in
   English (IACDE / School of Engineering and Computer Science (ECS) / Faculty of Computing /
-  School of Computer Science). The work row's location reads `中国深圳` / `Shenzhen, China`.
+  School of Computer Science). The work row's location reads `中国 深圳` / `Shenzhen, China`.
   All four emblems use the same 22px square slot in `site-extras.css`; the wide VUW wordmark
   is cropped to its shield crest in `images/VUW-crest.svg` so it matches the round emblems.
   The old `#-positions` / `#-educations` anchors are still kept as spans for old links. Degree

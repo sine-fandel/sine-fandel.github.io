@@ -98,7 +98,7 @@ anywhere on the page (legacy feature, still supported):
 profile: round photo, bold bilingual name, one position line, then icon rows (location,
 institution, email, Google Scholar, ORCID when `author.orcid` is set, GitHub, website). The
 left column is widened to 21% on desktop and the round avatar is 140px (`site-extras.css`);
-sidebar type is 1.1rem (name) / 0.86rem (position and icon rows). On narrow screens the link
+sidebar type is 1.2rem (name) / 0.96rem (position and icon rows). On narrow screens the link
 list is forced visible
 (the theme normally hides it with an inline `display:none`). The institution row uses the official
 SIAT round emblem from `images/SIAT-logo.png` (source: `www.siat.ac.cn/images/szxjy-logoicon.png`).

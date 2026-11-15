@@ -97,7 +97,7 @@ anywhere on the page (legacy feature, still supported):
 `_includes/author-profile.html` + `assets/css/site-extras.css` render a compact academic
 profile: round photo, bold bilingual name, one position line, then icon rows (location,
 institution, email, Google Scholar, ORCID when `author.orcid` is set, GitHub, website). The
-left column is widened to 21% on desktop and the round avatar is 108px (`site-extras.css`);
+left column is widened to 21% on desktop and the round avatar is 140px (`site-extras.css`);
 on narrow screens the link list is forced visible
 (the theme normally hides it with an inline `display:none`). The institution row uses the official
 SIAT round emblem from `images/SIAT-logo.png` (source: `www.siat.ac.cn/images/szxjy-logoicon.png`).

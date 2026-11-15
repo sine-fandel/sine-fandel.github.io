@@ -86,15 +86,15 @@ html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
 
 .sidebar .profile_box--clean .author__avatar { display: block; width: auto; height: auto; }
 .sidebar .profile_box--clean .author__avatar img {
-  width: 108px;
-  height: 108px;
+  width: 140px;
+  height: 140px;
   min-width: 0;
-  max-width: 108px;
+  max-width: 140px;
   padding: 0;
   border: 1px solid #e9edf1;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.85rem;
+  margin-bottom: 1rem;
 }
 
 .sidebar .profile_box--clean .author__content {

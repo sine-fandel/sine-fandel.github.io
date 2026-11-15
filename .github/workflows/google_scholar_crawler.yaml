@@ -43,6 +43,8 @@ jobs:
         env:
           # Optional repo secret; falls back to the site owner's public profile id.
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID || 'Y3LoyksAAAAJ' }}
+          # Optional: a proxy that can reach Scholar when GitHub-hosted IPs are blocked.
+          SCHOLAR_HTTP_PROXY: ${{ secrets.SCHOLAR_HTTP_PROXY }}
         run: |
           cd google_scholar_crawler
           set +e

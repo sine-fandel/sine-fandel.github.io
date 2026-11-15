@@ -31,11 +31,19 @@ Google Scholar profile  ──(GitHub Action, daily 08:00 UTC)──▶  google-
 1. `.github/workflows/google_scholar_crawler.yaml` runs on `page_build`, on a daily cron, or on
    manual `workflow_dispatch`.
 2. `google_scholar_crawler/main.py` fetches the profile. It first parses the public profile HTML
-   with `requests` + BeautifulSoup (one request, paginated), and falls back to the `scholarly`
-   package. If both fail it writes **nothing** and exits non-zero, so the last good data is never
-   overwritten.
+   with `requests` + BeautifulSoup (one request, paginated, several regional Scholar hosts), and
+   falls back to the `scholarly` package. If every strategy fails it writes **no** `gs_data.json`,
+   so the last good data is never overwritten.
 3. Valid results are pushed as `gs_data.json` + `gs_data_shieldsio.json` to the orphan branch
-   `google-scholar-stats`.
+   `google-scholar-stats`. A blocked run does not fail the job: it preserves whatever is already
+   on that branch and publishes `sync-status.json` plus a run-summary with the error log.
+   Google Scholar often rate-limits datacenter IPs; if that happens regularly, set an optional
+   `SCHOLAR_HTTP_PROXY` secret (any HTTP(S) proxy that can reach Scholar), or refresh from a
+   residential network with:
+   ```bash
+   cd google_scholar_crawler && pip install -r requirements.txt && python main.py
+   # then copy results/*.json into the google-scholar-stats branch and push
+   ```
 4. `assets/js/scholar-publications.js` reads that JSON at runtime (raw GitHub → jsDelivr → local
    snapshot) and renders the metric cards and year-grouped publication list into `#scholar-app`.
    No Jekyll rebuild is needed when Scholar changes.

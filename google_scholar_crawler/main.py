@@ -6,13 +6,14 @@ Outputs (written to ./results/):
                               assets/js/scholar-publications.js
   * gs_data_shieldsio.json  - shields.io badge payload (citations)
 
-Two independent strategies are attempted, because Scholar rate-limits some IPs:
-  1. ``scholarly`` (rich metadata)
-  2. a direct scrape of the public profile HTML (requests + BeautifulSoup)
+Several strategies are attempted, because Scholar blocks many datacenter IPs:
+  1. a direct scrape of the public profile HTML on regional Scholar hosts
+  2. the same profile through Google's translate proxy (Google-side fetch)
+  3. ``scholarly`` (rich metadata)
 
-If neither returns a usable profile, NOTHING is written and the process exits
-with status 1. The GitHub Actions job then stops before publishing, so an
-empty/broken snapshot can never overwrite the last good data.
+If none return a usable profile, NOTHING is written and the process exits with
+status 1. The GitHub Actions job then preserves the last good data branch, so
+an empty/broken snapshot can never overwrite it.
 
 Environment:
   GOOGLE_SCHOLAR_ID  - Scholar user id (defaults to this site's owner)
@@ -39,6 +40,11 @@ SCHOLAR_HOSTS = (
     "https://scholar.google.com.au/citations",
     "https://scholar.google.de/citations",
 )
+# Google's translate proxy fetches the page server-side from Google's own IPs,
+# which are usually not subject to Scholar's datacenter-IP block. Paper titles,
+# authors and venues stay in English; only the surrounding UI is translated.
+TRANSLATE_URL = "https://scholar-google-com.translate.goog/citations"
+TRANSLATE_PARAMS = {"_x_tr_sl": "en", "_x_tr_tl": "zh-CN", "_x_tr_hl": "en"}
 # Optional escape hatch for networks where Scholar only works through a proxy.
 PROXY = os.environ.get("SCHOLAR_HTTP_PROXY", "").strip()
 PROXIES = {"http": PROXY, "https": PROXY} if PROXY else None
@@ -156,7 +162,13 @@ def scrape_profile_html() -> dict:
     raise RuntimeError("all Scholar hosts failed -> " + " | ".join(errors))
 
 
-def _scrape_from_host(works_url: str) -> dict:
+def scrape_profile_via_translate() -> dict:
+    """Fetch the same profile through Google Translate (bypasses IP blocks)."""
+    return _scrape_from_host(TRANSLATE_URL, TRANSLATE_PARAMS, source="translate")
+
+
+def _scrape_from_host(works_url: str, extra_params: dict | None = None,
+                      source: str = "html") -> dict:
     """Parse the public profile page directly (no third-party Scholar API)."""
     params = {
         "user": SCHOLAR_ID,
@@ -165,6 +177,8 @@ def _scrape_from_host(works_url: str) -> dict:
         "sortby": "pubdate",
         "pagesize": 100,
     }
+    if extra_params:
+        params.update(extra_params)
     soup = None
     publications = []
     # Scholar paginates in blocks of 100; walk the pages so nothing is dropped.
@@ -215,7 +229,7 @@ def _scrape_from_host(works_url: str) -> dict:
     if not publications:
         raise RuntimeError("Profile found but publication rows could not be parsed")
     return build_snapshot(name, affiliation.get_text(" ", strip=True) if affiliation else "",
-                           interests, metrics, publications, source="html")
+                           interests, metrics, publications, source=source)
 
 
 def scrape_with_scholarly() -> dict:
@@ -299,7 +313,7 @@ def write_outputs(data: dict) -> None:
 
 def main() -> int:
     data = None
-    for strategy in (scrape_profile_html, scrape_with_scholarly):
+    for strategy in (scrape_profile_html, scrape_profile_via_translate, scrape_with_scholarly):
         try:
             candidate = strategy()
             if candidate["publications"]:

@@ -31,9 +31,10 @@ Google Scholar profile  ──(GitHub Action, daily 08:00 UTC)──▶  google-
 1. `.github/workflows/google_scholar_crawler.yaml` runs on `page_build`, on a daily cron, or on
    manual `workflow_dispatch`.
 2. `google_scholar_crawler/main.py` fetches the profile. It first parses the public profile HTML
-   with `requests` + BeautifulSoup (one request, paginated, several regional Scholar hosts), and
-   falls back to the `scholarly` package. If every strategy fails it writes **no** `gs_data.json`,
-   so the last good data is never overwritten.
+   with `requests` + BeautifulSoup (one request, paginated, several regional Scholar hosts),
+   then retries through Google's translate proxy (Google-side fetch, useful when datacenter IPs
+   are blocked), and finally falls back to the `scholarly` package. If every strategy fails it
+   writes **no** `gs_data.json`, so the last good data is never overwritten.
 3. Valid results are pushed as `gs_data.json` + `gs_data_shieldsio.json` to the orphan branch
    `google-scholar-stats`. A blocked run does not fail the job: it preserves whatever is already
    on that branch and publishes `sync-status.json` plus a run-summary with the error log.

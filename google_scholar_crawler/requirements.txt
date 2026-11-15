@@ -2,6 +2,8 @@
 requests>=2.31,<3
 beautifulsoup4>=4.12,<5
 
-# Fallback strategy (optional: the crawler degrades gracefully if unavailable)
+# Fallback strategy (optional: the crawler degrades gracefully if unavailable).
+# bibtexparser 2.x removed the `bibdatabase` module that scholarly 1.5.1 imports.
 jsonpickle==1.4.2
+bibtexparser==1.4.1
 scholarly==1.5.1

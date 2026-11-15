@@ -23,8 +23,8 @@ google_site_verification :  # get google_site_verification from https://search.g
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
 baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
-# Sidebar profile: false = clean text-only profile, true = show the round photo
-profile_show_avatar : false
+# Sidebar profile: true = show the round photo above the name, false = text only
+profile_show_avatar : true
 
 # Site Author
 author:

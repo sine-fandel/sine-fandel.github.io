@@ -94,18 +94,20 @@ anywhere on the page (legacy feature, still supported):
 
 ## Sidebar profile
 
-`_includes/author-profile.html` + `assets/css/site-extras.css` render a text-only academic
-profile: bold bilingual name, one position line, then large icon rows (location, institution,
-email, Google Scholar, ORCID when `author.orcid` is set, GitHub, website). The left column is
-widened to 30% on desktop; on narrow screens the link list is forced visible (the theme
-normally hides it with an inline `display:none`).
+`_includes/author-profile.html` + `assets/css/site-extras.css` render a compact academic
+profile: round photo, bold bilingual name, one position line, then icon rows (location,
+institution, email, Google Scholar, ORCID when `author.orcid` is set, GitHub, website). The
+left column is widened to 24% on desktop; on narrow screens the link list is forced visible
+(the theme normally hides it with an inline `display:none`).
 
-Set `profile_show_avatar: true` in `_config.yml` to show the round photo again. To add your
+`profile_show_avatar: false` in `_config.yml` switches to text-only (no photo). To add your
 ORCID row, fill in `author.orcid` with the full profile URL — the row is otherwise omitted.
 
 ## Edit content
 
-- `_pages/about.md` — homepage content (bilingual sections, appointments, education).
+- `_pages/about.md` — homepage content (bilingual About, combined Experience timeline,
+  Publications). Appointments and Education were merged into one `#-experience` section;
+  the old `#-positions` / `#-educations` anchors are still kept as spans for old links.
 - `_config.yml` — site title, author details, links, Scholar id, CDN preference, avatar toggle.
 - `_includes/author-profile.html` — sidebar profile markup.
 - `_data/navigation.yml` — top navigation.

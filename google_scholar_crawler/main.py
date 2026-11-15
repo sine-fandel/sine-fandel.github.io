@@ -32,7 +32,16 @@ from bs4 import BeautifulSoup
 
 SCHOLAR_ID = os.environ.get("GOOGLE_SCHOLAR_ID", "Y3LoyksAAAAJ").strip() or "Y3LoyksAAAAJ"
 SCHOLAR_URL = f"https://scholar.google.com/citations?user={SCHOLAR_ID}&hl=en"
-WORKS_URL = "https://scholar.google.com/citations"
+# Try several regional Scholar hosts: rate limiting is often host-specific.
+SCHOLAR_HOSTS = (
+    "https://scholar.google.com/citations",
+    "https://scholar.google.co.uk/citations",
+    "https://scholar.google.com.au/citations",
+    "https://scholar.google.de/citations",
+)
+# Optional escape hatch for networks where Scholar only works through a proxy.
+PROXY = os.environ.get("SCHOLAR_HTTP_PROXY", "").strip()
+PROXIES = {"http": PROXY, "https": PROXY} if PROXY else None
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
@@ -137,6 +146,17 @@ def _parse_publication_rows(rows) -> list:
 
 
 def scrape_profile_html() -> dict:
+    """Parse the public profile page directly, trying every regional host."""
+    errors = []
+    for host in SCHOLAR_HOSTS:
+        try:
+            return _scrape_from_host(host)
+        except Exception as exc:  # noqa: BLE001
+            errors.append(f"{host}: {type(exc).__name__}: {exc}")
+    raise RuntimeError("all Scholar hosts failed -> " + " | ".join(errors))
+
+
+def _scrape_from_host(works_url: str) -> dict:
     """Parse the public profile page directly (no third-party Scholar API)."""
     params = {
         "user": SCHOLAR_ID,
@@ -150,7 +170,8 @@ def scrape_profile_html() -> dict:
     # Scholar paginates in blocks of 100; walk the pages so nothing is dropped.
     for cstart in range(0, 500, 100):
         params["cstart"] = cstart
-        response = requests.get(WORKS_URL, params=params, headers=HEADERS, timeout=30)
+        response = requests.get(works_url, params=params, headers=HEADERS,
+                                timeout=30, proxies=PROXIES)
         response.raise_for_status()
         html = response.text
         if "gsc_a_b" not in html or "not a robot" in html.lower() or "unusual traffic" in html.lower():

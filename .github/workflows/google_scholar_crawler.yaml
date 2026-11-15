@@ -3,6 +3,10 @@ name: Sync Google Scholar Data
 # Keeps the `google-scholar-stats` data branch in sync with the public Scholar
 # profile. The homepage reads that branch at runtime, so publications and
 # citation counts update without a Jekyll rebuild.
+#
+# Scholar blocks many datacenter IPs. A failed fetch is NOT fatal: the last good
+# snapshot is preserved and the failure is recorded in sync-status.json plus
+# the run's step summary, so the data branch is never emptied by a blocked run.
 on:
   page_build:
   workflow_dispatch:
@@ -33,31 +37,65 @@ jobs:
         run: pip install -r google_scholar_crawler/requirements.txt
 
       - name: Fetch Scholar profile
+        id: fetch
+        continue-on-error: true
+        shell: bash
         env:
           # Optional repo secret; falls back to the site owner's public profile id.
           GOOGLE_SCHOLAR_ID: ${{ secrets.GOOGLE_SCHOLAR_ID || 'Y3LoyksAAAAJ' }}
         run: |
           cd google_scholar_crawler
-          python main.py
+          set +e
+          python main.py 2>&1 | tee /tmp/scholar_sync.log
+          code=${PIPESTATUS[0]}
+          set -e
+          SYNC_CODE=$code python - <<'PY'
+          import datetime, json, os, pathlib
+          log = pathlib.Path('/tmp/scholar_sync.log').read_text(encoding='utf-8', errors='replace')
+          out = pathlib.Path('results')
+          out.mkdir(exist_ok=True)
+          (out / 'sync-status.json').write_text(json.dumps({
+              'ok': os.environ.get('SYNC_CODE') == '0',
+              'checked_at': datetime.datetime.now(datetime.timezone.utc).isoformat(timespec='seconds'),
+              'log_tail': log[-4000:]
+          }, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+          PY
+          {
+            echo "### Google Scholar sync"
+            echo "- exit code: \`$code\`"
+            echo '```text'
+            cat /tmp/scholar_sync.log
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          exit $code
 
-      # If the step above failed (Scholar blocked both strategies), the job
-      # stops here and the previously published data branch stays untouched.
       - name: Publish data branch
+        if: always()
+        shell: bash
         env:
           REPO: ${{ github.repository }}
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACTOR: ${{ github.actor }}
         run: |
-          cd google_scholar_crawler/results
+          set -e
+          mkdir -p /tmp/gsdata
+          cd /tmp/gsdata
           git init -q
           git config --local user.name "github-actions[bot]"
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add gs_data.json gs_data_shieldsio.json
+          git remote add origin "https://github.com/${REPO}.git"
+          # Start from the existing data branch so a blocked run cannot delete good data.
+          if git fetch -q --depth=1 origin google-scholar-stats; then
+            git checkout -q -B google-scholar-stats FETCH_HEAD
+          else
+            git checkout -q --orphan google-scholar-stats
+          fi
+          cp "$GITHUB_WORKSPACE/google_scholar_crawler/results/"*.json . 2>/dev/null || true
+          git add -A
           if git diff --cached --quiet; then
             echo "No data changes - skipping publish."
             exit 0
           fi
-          git commit -q -m "chore: sync Google Scholar data for ${ACTOR}"
+          git commit -q -m "chore: sync Google Scholar data"
           git push -q --force \
             "https://x-access-token:${TOKEN}@github.com/${REPO}.git" \
             HEAD:google-scholar-stats

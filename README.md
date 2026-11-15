@@ -97,7 +97,8 @@ anywhere on the page (legacy feature, still supported):
 `_includes/author-profile.html` + `assets/css/site-extras.css` render a compact academic
 profile: round photo, bold bilingual name, one position line, then icon rows (location,
 institution, email, Google Scholar, ORCID when `author.orcid` is set, GitHub, website). The
-left column is widened to 21% on desktop; on narrow screens the link list is forced visible
+left column is widened to 21% on desktop and the round avatar is 108px (`site-extras.css`);
+on narrow screens the link list is forced visible
 (the theme normally hides it with an inline `display:none`). The institution row uses the official
 SIAT round emblem from `images/SIAT-logo.png` (source: `www.siat.ac.cn/images/szxjy-logoicon.png`).
 
@@ -108,9 +109,13 @@ ORCID row, fill in `author.orcid` with the full profile URL — the row is other
 
 - `_pages/about.md` — homepage content (bilingual About, `#-research-interests` keyword chips,
   combined Experience timeline, Publications). Appointments and Education were merged into one
-  `#-experience` section; work and education rows share one layout (badge + logo + title +
-  italic institution, no supervisor lines). The old `#-positions` / `#-educations` anchors are
-  still kept as spans for old links. Degree labels read "Ph.D / 博士" (graduated 2026.11).
+  `#-experience` section; work and education rows share one layout and read in the order
+  **institution (with city) &rarr; school/institute &rarr; position/degree** (badge + logo +
+  `.exp-org` + `.exp-loc` + `.exp-unit` + `.exp-role`). The school/institute labels are
+  `数字所` / `ECS` / `计算学部` / `计算机学院` in Chinese and the official English names in
+  English (IACDE / School of Engineering and Computer Science (ECS) / Faculty of Computing /
+  School of Computer Science). The old `#-positions` / `#-educations` anchors are still kept as
+  spans for old links. Degree labels read "Ph.D / 博士" (graduated 2026.11).
 - `_config.yml` — site title, author details, links, Scholar id, CDN preference, avatar toggle.
 - `_includes/author-profile.html` — sidebar profile markup.
 - `_data/navigation.yml` — top navigation.

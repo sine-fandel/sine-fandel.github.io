@@ -86,15 +86,15 @@ html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
 
 .sidebar .profile_box--clean .author__avatar { display: block; width: auto; height: auto; }
 .sidebar .profile_box--clean .author__avatar img {
-  width: 76px;
-  height: 76px;
+  width: 108px;
+  height: 108px;
   min-width: 0;
-  max-width: 76px;
+  max-width: 108px;
   padding: 0;
   border: 1px solid #e9edf1;
   border-radius: 50%;
   object-fit: cover;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.85rem;
 }
 
 .sidebar .profile_box--clean .author__content {
@@ -258,6 +258,22 @@ html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
   vertical-align: 1px;
 }
 .page__content .exp-tag--edu { background: #eaf3ec; color: #2f6b45; }
+/* Experience rows read: institution / school or institute / position or degree. */
+.page__content .positions-table .exp-org {
+  font-weight: 600;
+  color: #3d464d;
+}
+.page__content .positions-table .exp-unit {
+  font-weight: 600;
+  color: #3c557a;
+}
+.page__content .positions-table .exp-loc { font-weight: 400; color: #7a8288; }
+.page__content .positions-table .exp-role { color: #4a5258; }
+.page__content .positions-table .exp-sep {
+  margin: 0 0.4rem;
+  color: #b6c0c9;
+  font-weight: 400;
+}
 
 /* --- Citation metric cards ---------------------------------------------- */
 .scholar-stats {

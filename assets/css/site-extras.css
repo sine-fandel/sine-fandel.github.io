@@ -86,10 +86,10 @@ html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
 
 .sidebar .profile_box--clean .author__avatar { display: block; width: auto; height: auto; }
 .sidebar .profile_box--clean .author__avatar img {
-  width: 64px;
-  height: 64px;
+  width: 76px;
+  height: 76px;
   min-width: 0;
-  max-width: 64px;
+  max-width: 76px;
   padding: 0;
   border: 1px solid #e9edf1;
   border-radius: 50%;
@@ -211,6 +211,23 @@ html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
 /* --- Page headings ------------------------------------------------------- */
 .page__content h1.section-heading { margin-top: 1.4em; }
 .page__content .section-intro { margin: 0.25em 0 1em; line-height: 1.7; }
+/* Research interests: a single compact row of keyword chips. */
+.page__content .interest-tags {
+  margin: 0.25em 0 0.7em;
+  padding: 0;
+  list-style: none;
+}
+.page__content .interest-tag {
+  display: inline-block;
+  margin: 0 0.4rem 0.45rem 0;
+  padding: 0.25rem 0.7rem;
+  border: 1px solid #dbe4ef;
+  border-radius: 999px;
+  background: #f5f8fd;
+  color: #3c557a;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
 .page__content .positions-table td {
   vertical-align: top;
   padding: 6px 8px;

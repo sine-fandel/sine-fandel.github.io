@@ -14,11 +14,32 @@ redirect_from:
 
 <div data-lang="en">
 <p class="section-intro">I am an <strong>Assistant Researcher / Postdoctoral Researcher</strong> at the <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">Shenzhen Institutes of Advanced Technology (SIAT)</a>, Chinese Academy of Sciences.</p>
-<p class="section-intro">My research spans cloud computing, service computing, efficient LLM inference and serving systems, reinforcement learning, and evolutionary computation, with an emphasis on resource allocation and autoscaling for microservice-based and AI workloads.</p>
+<p class="section-intro">My work focuses on efficient and reliable AI systems, from resource allocation and autoscaling for microservice-based and AI workloads to LLM inference serving.</p>
 </div>
 <div data-lang="zh">
 <p class="section-intro">我是<a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">中国科学院深圳先进技术研究院（SIAT）</a>的<strong>助理研究员 / 博士后研究员</strong>。</p>
-<p class="section-intro">研究兴趣包括云计算、服务计算、大模型高效推理与服务系统、强化学习与演化计算，重点关注微服务与 AI 工作负载的资源调度与弹性伸缩。</p>
+<p class="section-intro">研究重点面向高效可靠的 AI 系统，涵盖微服务与 AI 工作负载的资源调度、弹性伸缩以及大模型推理服务系统。</p>
+</div>
+
+<h1 class="section-heading" id="-research-interests" data-i18n="heading_interests">&#128161; Research Interests</h1>
+
+<div data-lang="en">
+<p class="interest-tags">
+  <span class="interest-tag">Cloud Computing</span>
+  <span class="interest-tag">AI Infra</span>
+  <span class="interest-tag">Agentic Workflow</span>
+  <span class="interest-tag">Reinforcement Learning</span>
+  <span class="interest-tag">Evolutionary Computation</span>
+</p>
+</div>
+<div data-lang="zh">
+<p class="interest-tags">
+  <span class="interest-tag">云计算</span>
+  <span class="interest-tag">AI Infra</span>
+  <span class="interest-tag">Agentic Workflow</span>
+  <span class="interest-tag">强化学习</span>
+  <span class="interest-tag">演化计算</span>
+</p>
 </div>
 
 <!-- Legacy anchors kept so old #-positions / #-educations links still land here. -->
@@ -30,15 +51,15 @@ redirect_from:
 <table class="positions-table"><tbody>
   <tr>
     <td>2026.12-Present</td>
-    <td><span class="exp-tag">Work</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT logo"></a> <strong>Assistant Researcher / Postdoctoral Researcher</strong><br><em><a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">Shenzhen Institutes of Advanced Technology (SIAT)</a>, Chinese Academy of Sciences &middot; Shenzhen, China</em></td>
+    <td><span class="exp-tag">Work</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT logo"></a> Assistant Researcher / Postdoctoral Researcher&nbsp;&nbsp;<em>Shenzhen Institutes of Advanced Technology (SIAT), CAS &middot; Shenzhen, China</em></td>
   </tr>
   <tr>
     <td>2023.02-2026.11</td>
-    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> Ph.D in Computer Science&nbsp;&nbsp;<em>Victoria University of Wellington, Wellington, New Zealand</em><br><em>Supervisors: <a href="https://people.wgtn.ac.nz/hui.ma">A/Prof. Hui Ma</a>, <a href="https://people.wgtn.ac.nz/aaron.chen">A/Prof. Aaron Chen</a></em></td>
+    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> Ph.D in Computer Science&nbsp;&nbsp;<em>Victoria University of Wellington, Wellington, New Zealand</em></td>
   </tr>
   <tr>
     <td>2019.09-2021.12</td>
-    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" width="26pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institute of Technology, Harbin, China</em><br><em>Supervisor: <a href="https://homepage.hit.edu.cn/qmc">A/Prof. Mingcheng Qu</a></em></td>
+    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" width="26pt"></a> M.Eng in Software Engineering&nbsp;&nbsp;<em>Harbin Institute of Technology, Harbin, China</em></td>
   </tr>
   <tr>
     <td>2015.09-2019.07</td>
@@ -50,15 +71,15 @@ redirect_from:
 <table class="positions-table"><tbody>
   <tr>
     <td>2026.12-至今</td>
-    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT 院徽"></a> <strong>助理研究员 / 博士后研究员</strong><br><em><a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">中国科学院深圳先进技术研究院（SIAT）</a> &middot; 深圳</em></td>
+    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT 院徽"></a> 助理研究员 / 博士后研究员&nbsp;&nbsp;<em>中国科学院深圳先进技术研究院（SIAT） &middot; 深圳</em></td>
   </tr>
   <tr>
     <td>2023.02-2026.11</td>
-    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> 计算机科学 博士&nbsp;&nbsp;<em>惠灵顿维多利亚大学，新西兰 惠灵顿</em><br><em>导师：<a href="https://people.wgtn.ac.nz/hui.ma">Hui Ma 副教授</a>、<a href="https://people.wgtn.ac.nz/aaron.chen">Aaron Chen 副教授</a></em></td>
+    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> 计算机科学 博士&nbsp;&nbsp;<em>惠灵顿维多利亚大学，新西兰 惠灵顿</em></td>
   </tr>
   <tr>
     <td>2019.09-2021.12</td>
-    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" width="26pt"></a> 软件工程 硕士&nbsp;&nbsp;<em>哈尔滨工业大学，中国 哈尔滨</em><br><em>导师：<a href="https://homepage.hit.edu.cn/qmc">屈明成 副教授</a></em></td>
+    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" width="26pt"></a> 软件工程 硕士&nbsp;&nbsp;<em>哈尔滨工业大学，中国 哈尔滨</em></td>
   </tr>
   <tr>
     <td>2015.09-2019.07</td>

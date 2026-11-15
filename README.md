@@ -106,9 +106,11 @@ ORCID row, fill in `author.orcid` with the full profile URL — the row is other
 
 ## Edit content
 
-- `_pages/about.md` — homepage content (bilingual About, combined Experience timeline,
-  Publications). Appointments and Education were merged into one `#-experience` section;
-  the old `#-positions` / `#-educations` anchors are still kept as spans for old links.
+- `_pages/about.md` — homepage content (bilingual About, `#-research-interests` keyword chips,
+  combined Experience timeline, Publications). Appointments and Education were merged into one
+  `#-experience` section; work and education rows share one layout (badge + logo + title +
+  italic institution, no supervisor lines). The old `#-positions` / `#-educations` anchors are
+  still kept as spans for old links. Degree labels read "Ph.D / 博士" (graduated 2026.11).
 - `_config.yml` — site title, author details, links, Scholar id, CDN preference, avatar toggle.
 - `_includes/author-profile.html` — sidebar profile markup.
 - `_data/navigation.yml` — top navigation.

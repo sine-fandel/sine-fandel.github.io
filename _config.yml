@@ -23,6 +23,9 @@ google_site_verification :  # get google_site_verification from https://search.g
 bing_site_verification   :  # get bing_site_verification from https://www.bing.com/webmasters/about
 baidu_site_verification  :  # get baidu_site_verification from https://ziyuan.baidu.com/login/index?u=/site/index
 
+# Sidebar profile: false = clean text-only profile, true = show the round photo
+profile_show_avatar : false
+
 # Site Author
 author:
   name             : "Zhengxin Fang"
@@ -31,9 +34,13 @@ author:
   bio              : "Assistant Researcher / Postdoctoral Researcher, SIAT, Chinese Academy of Sciences"
   bio_en           : "Assistant Researcher / Postdoctoral Researcher, Shenzhen Institutes of Advanced Technology (SIAT), Chinese Academy of Sciences"
   bio_zh           : "中国科学院深圳先进技术研究院（SIAT）助理研究员 / 博士后研究员"
-  location         : "Shenzhen, Guangdong, China"
-  location_zh       : "中国 · 广东 · 深圳"
-  employer         :
+  position         : "Assistant Researcher / Postdoctoral Researcher"
+  position_zh      : "助理研究员 / 博士后研究员"
+  location         : "Shenzhen, China"
+  location_zh      : "中国 · 深圳"
+  employer         : "Shenzhen Institutes of Advanced Technology, CAS"
+  employer_zh      : "中国科学院深圳先进技术研究院（SIAT）"
+  employer_url     : "https://www.siat.ac.cn/"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=Y3LoyksAAAAJ&hl=en"
   email            : "zhengxin.fang@ecs.vuw.ac.nz"

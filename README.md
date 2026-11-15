@@ -84,16 +84,33 @@ anywhere on the page (legacy feature, still supported):
 - `data-i18n="key"` swaps an element's text; `data-lang="en"` / `data-lang="zh"` wraps whole blocks;
   `?lang=zh` forces a language; the last choice is stored in `localStorage`.
 - Navigation labels come from `_data/navigation.yml` (`title` / `title_zh`).
-- Sidebar bio / name / location come from `author.*` in `_config.yml` (`bio_en`, `bio_zh`,
-  `name_zh`, `location_zh`).
+- Sidebar name / position / location / institution come from `author.*` in `_config.yml`
+  (`name`, `name_zh`, `position`, `position_zh`, `location`, `location_zh`, `employer`,
+  `employer_zh`, `employer_url`).
+- The two EN / 中文 buttons live in `_includes/masthead.html`. The bundled greedy-nav plugin
+  is patched (`assets/js/main.min.js` and `assets/js/plugins/jquery.greedy-navigation.js`)
+  so it only targets the hamburger button and never moves the language switch into the
+  collapsed menu. Clicking a button switches everything without a reload.
+
+## Sidebar profile
+
+`_includes/author-profile.html` + `assets/css/site-extras.css` render a text-only academic
+profile: bold bilingual name, one position line, then large icon rows (location, institution,
+email, Google Scholar, ORCID when `author.orcid` is set, GitHub, website). The left column is
+widened to 30% on desktop; on narrow screens the link list is forced visible (the theme
+normally hides it with an inline `display:none`).
+
+Set `profile_show_avatar: true` in `_config.yml` to show the round photo again. To add your
+ORCID row, fill in `author.orcid` with the full profile URL — the row is otherwise omitted.
 
 ## Edit content
 
 - `_pages/about.md` — homepage content (bilingual sections, appointments, education).
-- `_config.yml` — site title, author details, links, Scholar id, CDN preference.
+- `_config.yml` — site title, author details, links, Scholar id, CDN preference, avatar toggle.
+- `_includes/author-profile.html` — sidebar profile markup.
 - `_data/navigation.yml` — top navigation.
-- `assets/css/site-extras.css` — all new styling for the language switch, metric cards and
-  publication list.
+- `assets/css/site-extras.css` — styling for the language switch, sidebar profile, metric
+  cards and publication list.
 
 ## Run locally
 

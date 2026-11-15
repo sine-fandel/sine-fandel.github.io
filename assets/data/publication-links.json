@@ -1,5 +1,9 @@
 {
-  "_comment": "Hand-curated extras keyed by Google Scholar citation id. The crawler never touches this file, so DOI links and venue badges survive automatic publication syncs.",
+  "_comment": "Hand-curated extras. Entries keyed by Google Scholar citation id hold per-paper `doi` and `badges`; `venueBadges` applies badges to every paper whose venue contains the key (case-insensitive). The crawler never touches this file, so DOI links and venue rankings survive automatic publication syncs.",
+  "venueBadges": {
+    "IEEE Transactions on Cloud Computing": ["CCF B", "Top Journal"],
+    "Expert Systems with Applications": ["JCR Q1", "Top Journal"]
+  },
   "Y3LoyksAAAAJ:Se3iqnhoufwC": {
     "badges": ["CCF A", "Top Journal"]
   },

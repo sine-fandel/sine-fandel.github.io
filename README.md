@@ -65,9 +65,16 @@ from the Actions tab.
 | File | Purpose |
 | --- | --- |
 | `assets/data/scholar.json` | Committed fallback snapshot (normally maintained by the crawler). |
-| `assets/data/publication-links.json` | Hand-curated extras keyed by Scholar citation id: `doi` and `badges` (e.g. `CCF A`). The crawler never touches this file. |
+| `assets/data/publication-links.json` | Hand-curated extras: per-paper `doi` / `badges` keyed by Scholar citation id, plus `venueBadges` keyed by venue name (applied to every matching paper). The crawler never touches this file. |
 | `google_scholar_crawler/main.py` | Fetch / normalize logic. |
 | `.github/workflows/google_scholar_crawler.yaml` | Sync schedule. |
+
+`venueBadges` matches a venue name case-insensitively as a substring, so rankings keep working
+after a Scholar re-sync (citation ids can change) and automatically cover new papers in that
+journal. Current classifications: IEEE Transactions on Cloud Computing → `CCF B`, `Top Journal`;
+Expert Systems with Applications → `JCR Q1`, `Top Journal`; IEEE Transactions on Services
+Computing → `CCF A`, `Top Journal`; ICSOC → `CCF B` (the last two are per-paper entries).
+Per-paper badges come first, venue badges are appended, and duplicates are removed.
 
 Add a `show_paper_citations` span with the Scholar paper id to display an individual citation count
 anywhere on the page (legacy feature, still supported):

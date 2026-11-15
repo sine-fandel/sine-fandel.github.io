@@ -142,6 +142,26 @@
     return t(key) === key ? t('pub_type_other') : t(key);
   }
 
+  // Badges may be attached to a single paper (by Scholar citation id) or to a
+  // whole venue. Venue rules survive Scholar re-syncs that change citation ids
+  // and automatically apply to future papers in the same journal.
+  function badgesFor(pub) {
+    var extras = state.extras || {};
+    var perPaper = extras[pub.id] || {};
+    var out = Array.isArray(perPaper.badges) ? perPaper.badges.slice() : [];
+    var rules = extras.venueBadges || {};
+    var venue = (pub.venue || '').toLowerCase();
+    Object.keys(rules).forEach(function (name) {
+      if (!name || venue.indexOf(name.toLowerCase()) === -1) return;
+      var badges = rules[name];
+      if (!Array.isArray(badges)) return;
+      badges.forEach(function (badge) {
+        if (out.indexOf(badge) === -1) out.push(badge);
+      });
+    });
+    return out;
+  }
+
   function linksFor(pub) {
     var extra = state.extras[pub.id] || {};
     var out = [];
@@ -157,7 +177,7 @@
       out.push('<a class="pub-link" href="' + esc(pub.url) +
         '" target="_blank" rel="noopener">' + esc(t('pub_scholar')) + '</a>');
     }
-    (extra.badges || []).forEach(function (badge) {
+    badgesFor(pub).forEach(function (badge) {
       out.push('<span class="pub-badge">' + esc(badge) + '</span>');
     });
     return out.join('');

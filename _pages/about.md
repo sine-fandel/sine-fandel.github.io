@@ -51,19 +51,19 @@ redirect_from:
 <table class="positions-table"><tbody>
   <tr>
     <td>2026.12-Present</td>
-    <td><span class="exp-tag">Work</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT logo"></a> <span class="exp-org">Shenzhen Institutes of Advanced Technology (SIAT), CAS</span><span class="exp-loc">, Shenzhen, China</span><span class="exp-sep">&middot;</span><span class="exp-unit">Institute of Advanced Computing and Digital Engineering (IACDE)</span><span class="exp-sep">&middot;</span><span class="exp-role">Assistant Researcher / Postdoctoral Researcher</span></td>
+    <td><span class="exp-tag">Work</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="SIAT logo"></a> <span class="exp-org">Shenzhen Institutes of Advanced Technology (SIAT), CAS</span><span class="exp-sep">&middot;</span><span class="exp-unit">Institute of Advanced Computing and Digital Engineering (IACDE)</span><span class="exp-sep">&middot;</span><span class="exp-role">Assistant Researcher / Postdoctoral Researcher</span><span class="exp-sep">&middot;</span><span class="exp-loc">Shenzhen, China</span></td>
   </tr>
   <tr>
     <td>2023.02-2026.11</td>
-    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> <span class="exp-org">Victoria University of Wellington</span><span class="exp-loc">, Wellington, New Zealand</span><span class="exp-sep">&middot;</span><span class="exp-unit">School of Engineering and Computer Science (ECS)</span><span class="exp-sep">&middot;</span><span class="exp-role">Ph.D in Computer Science</span></td>
+    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-crest.svg" alt="Victoria University of Wellington crest"></a> <span class="exp-org">Victoria University of Wellington</span><span class="exp-sep">&middot;</span><span class="exp-unit">School of Engineering and Computer Science (ECS)</span><span class="exp-sep">&middot;</span><span class="exp-role">Ph.D in Computer Science</span><span class="exp-sep">&middot;</span><span class="exp-loc">Wellington, New Zealand</span></td>
   </tr>
   <tr>
     <td>2019.09-2021.12</td>
-    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" width="26pt"></a> <span class="exp-org">Harbin Institute of Technology</span><span class="exp-loc">, Harbin, China</span><span class="exp-sep">&middot;</span><span class="exp-unit">Faculty of Computing</span><span class="exp-sep">&middot;</span><span class="exp-role">M.Eng in Software Engineering</span></td>
+    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" alt="HIT logo"></a> <span class="exp-org">Harbin Institute of Technology</span><span class="exp-sep">&middot;</span><span class="exp-unit">Faculty of Computing</span><span class="exp-sep">&middot;</span><span class="exp-role">M.Eng in Software Engineering</span><span class="exp-sep">&middot;</span><span class="exp-loc">Harbin, China</span></td>
   </tr>
   <tr>
     <td>2015.09-2019.07</td>
-    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.scnu.edu.cn/"><img class="svg" src="/images/SCNU-logo.svg" width="26pt"></a> <span class="exp-org">South China Normal University</span><span class="exp-loc">, Guangzhou, China</span><span class="exp-sep">&middot;</span><span class="exp-unit">School of Computer Science</span><span class="exp-sep">&middot;</span><span class="exp-role">B.Eng in Network Engineering</span></td>
+    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.scnu.edu.cn/"><img class="svg" src="/images/SCNU-logo.svg" alt="SCNU logo"></a> <span class="exp-org">South China Normal University</span><span class="exp-sep">&middot;</span><span class="exp-unit">School of Computer Science</span><span class="exp-sep">&middot;</span><span class="exp-role">B.Eng in Network Engineering</span><span class="exp-sep">&middot;</span><span class="exp-loc">Guangzhou, China</span></td>
   </tr>
 </tbody></table>
 </div>
@@ -71,19 +71,19 @@ redirect_from:
 <table class="positions-table"><tbody>
   <tr>
     <td>2026.12-至今</td>
-    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT 院徽"></a> <span class="exp-org">中国科学院深圳先进技术研究院（SIAT）</span><span class="exp-loc">，深圳</span><span class="exp-sep">&middot;</span><span class="exp-unit">数字所</span><span class="exp-sep">&middot;</span><span class="exp-role">助理研究员 / 博士后研究员</span></td>
+    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="SIAT 院徽"></a> <span class="exp-org">中国科学院深圳先进技术研究院（SIAT）</span><span class="exp-sep">&middot;</span><span class="exp-unit">数字所</span><span class="exp-sep">&middot;</span><span class="exp-role">助理研究员 / 博士后研究员</span><span class="exp-sep">&middot;</span><span class="exp-loc">中国深圳</span></td>
   </tr>
   <tr>
     <td>2023.02-2026.11</td>
-    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> <span class="exp-org">惠灵顿维多利亚大学</span><span class="exp-loc">，新西兰 惠灵顿</span><span class="exp-sep">&middot;</span><span class="exp-unit">ECS</span><span class="exp-sep">&middot;</span><span class="exp-role">计算机科学 博士</span></td>
+    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-crest.svg" alt="惠灵顿维多利亚大学校徽"></a> <span class="exp-org">惠灵顿维多利亚大学</span><span class="exp-sep">&middot;</span><span class="exp-unit">ECS</span><span class="exp-sep">&middot;</span><span class="exp-role">计算机科学 博士</span><span class="exp-sep">&middot;</span><span class="exp-loc">新西兰 惠灵顿</span></td>
   </tr>
   <tr>
     <td>2019.09-2021.12</td>
-    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" width="26pt"></a> <span class="exp-org">哈尔滨工业大学</span><span class="exp-loc">，中国 哈尔滨</span><span class="exp-sep">&middot;</span><span class="exp-unit">计算学部</span><span class="exp-sep">&middot;</span><span class="exp-role">软件工程 硕士</span></td>
+    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.hit.edu.cn/"><img class="svg" src="/images/HIT-logo.svg" alt="哈工大校徽"></a> <span class="exp-org">哈尔滨工业大学</span><span class="exp-sep">&middot;</span><span class="exp-unit">计算学部</span><span class="exp-sep">&middot;</span><span class="exp-role">软件工程 硕士</span><span class="exp-sep">&middot;</span><span class="exp-loc">中国 哈尔滨</span></td>
   </tr>
   <tr>
     <td>2015.09-2019.07</td>
-    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.scnu.edu.cn/"><img class="svg" src="/images/SCNU-logo.svg" width="26pt"></a> <span class="exp-org">华南师范大学</span><span class="exp-loc">，中国 广州</span><span class="exp-sep">&middot;</span><span class="exp-unit">计算机学院</span><span class="exp-sep">&middot;</span><span class="exp-role">网络工程 学士</span></td>
+    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.scnu.edu.cn/"><img class="svg" src="/images/SCNU-logo.svg" alt="华南师大校徽"></a> <span class="exp-org">华南师范大学</span><span class="exp-sep">&middot;</span><span class="exp-unit">计算机学院</span><span class="exp-sep">&middot;</span><span class="exp-role">网络工程 学士</span><span class="exp-sep">&middot;</span><span class="exp-loc">中国 广州</span></td>
   </tr>
 </tbody></table>
 </div>

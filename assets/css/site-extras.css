@@ -234,15 +234,22 @@ html.lang-zh [data-lang="zh"].lang-inline { display: inline !important; }
   border-bottom: 1px solid #f0f2f4;
 }
 .page__content .positions-table td:first-child { white-space: nowrap; width: 130px; color: #5c666d; }
-.page__content .positions-table img.siat-logo {
-  height: 34px;
-  width: auto;
+/* Every institution emblem gets the same 30px square slot, so the timeline
+   lines up regardless of a logo's intrinsic aspect ratio. The VUW wordmark is
+   cropped to its shield crest (images/VUW-crest.svg) to match the round emblems. */
+.page__content .positions-table img.svg {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
   max-width: none;
+  max-height: none;
   margin: 0 0.35rem 0.15rem 0;
   padding: 0;
   border: 0;
   border-radius: 0;
   box-shadow: none;
+  object-fit: contain;
+  object-position: center;
   vertical-align: middle;
 }
 /* Small type badge inside the merged Experience timeline. */

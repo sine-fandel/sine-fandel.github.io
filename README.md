@@ -98,7 +98,8 @@ anywhere on the page (legacy feature, still supported):
 profile: round photo, bold bilingual name, one position line, then icon rows (location,
 institution, email, Google Scholar, ORCID when `author.orcid` is set, GitHub, website). The
 left column is widened to 21% on desktop and the round avatar is 140px (`site-extras.css`);
-on narrow screens the link list is forced visible
+sidebar type is 1.1rem (name) / 0.86rem (position and icon rows). On narrow screens the link
+list is forced visible
 (the theme normally hides it with an inline `display:none`). The institution row uses the official
 SIAT round emblem from `images/SIAT-logo.png` (source: `www.siat.ac.cn/images/szxjy-logoicon.png`).
 
@@ -108,7 +109,11 @@ ORCID row, fill in `author.orcid` with the full profile URL — the row is other
 ## Edit content
 
 - `_pages/about.md` — homepage content (bilingual About, `#-research-interests` keyword chips,
-  combined Experience timeline, Publications). Appointments and Education were merged into one
+  combined Experience timeline, Publications). The About Me block has five short paragraphs per
+  language: role, research focus, education/work summary, publication summary, and reviewer
+  service (TSC, TEVC, TNSE, TEC, ICML, AAAI, ICLR, ICWS, WISE, SSE, CEC). The `(SIAT)` /
+  `（SIAT）` abbreviation is intentionally omitted from all visible text and author metadata.
+  Appointments and Education were merged into one
   `#-experience` section; work and education rows share one layout and read in the order
   **institution &rarr; school/institute &rarr; position/degree &rarr; city** (badge + logo +
   `.exp-org` + `.exp-unit` + `.exp-role` + `.exp-loc`). The school/institute labels are

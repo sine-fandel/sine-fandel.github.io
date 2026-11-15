@@ -24,17 +24,17 @@ redirect_from:
 <!-- Legacy anchors kept so old #-positions / #-educations links still land here. -->
 <span id="-positions"></span><span id="-educations"></span>
 
-<h1 class="section-heading" id="-experience" data-i18n="heading_experience">&#128197; Experience</h1>
+<h1 class="section-heading" id="-experience" data-i18n="heading_experience">&#128197; Education &amp; Work Experience</h1>
 
 <div data-lang="en">
 <table class="positions-table"><tbody>
   <tr>
-    <td>Present</td>
-    <td><span class="exp-tag">Work</span> <strong>Assistant Researcher / Postdoctoral Researcher</strong><br><em><a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">Shenzhen Institutes of Advanced Technology (SIAT)</a>, Chinese Academy of Sciences &middot; Shenzhen, China</em></td>
+    <td>2026.12-Present</td>
+    <td><span class="exp-tag">Work</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT logo"></a> <strong>Assistant Researcher / Postdoctoral Researcher</strong><br><em><a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">Shenzhen Institutes of Advanced Technology (SIAT)</a>, Chinese Academy of Sciences &middot; Shenzhen, China</em></td>
   </tr>
   <tr>
-    <td>2023.02-Now</td>
-    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> Ph.D Candidate in Computer Science&nbsp;&nbsp;<em>Victoria University of Wellington, Wellington, New Zealand</em><br><em>Supervisors: <a href="https://people.wgtn.ac.nz/hui.ma">A/Prof. Hui Ma</a>, <a href="https://people.wgtn.ac.nz/aaron.chen">A/Prof. Aaron Chen</a></em></td>
+    <td>2023.02-2026.11</td>
+    <td><span class="exp-tag exp-tag--edu">Education</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> Ph.D in Computer Science&nbsp;&nbsp;<em>Victoria University of Wellington, Wellington, New Zealand</em><br><em>Supervisors: <a href="https://people.wgtn.ac.nz/hui.ma">A/Prof. Hui Ma</a>, <a href="https://people.wgtn.ac.nz/aaron.chen">A/Prof. Aaron Chen</a></em></td>
   </tr>
   <tr>
     <td>2019.09-2021.12</td>
@@ -49,12 +49,12 @@ redirect_from:
 <div data-lang="zh">
 <table class="positions-table"><tbody>
   <tr>
-    <td>至今</td>
-    <td><span class="exp-tag">工作</span> <strong>助理研究员 / 博士后研究员</strong><br><em><a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">中国科学院深圳先进技术研究院（SIAT）</a> &middot; 深圳</em></td>
+    <td>2026.12-至今</td>
+    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg siat-logo" src="/images/SIAT-logo.png" alt="SIAT 院徽"></a> <strong>助理研究员 / 博士后研究员</strong><br><em><a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">中国科学院深圳先进技术研究院（SIAT）</a> &middot; 深圳</em></td>
   </tr>
   <tr>
-    <td>2023.02-Now</td>
-    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> 计算机科学 博士研究生&nbsp;&nbsp;<em>惠灵顿维多利亚大学，新西兰 惠灵顿</em><br><em>导师：<a href="https://people.wgtn.ac.nz/hui.ma">Hui Ma 副教授</a>、<a href="https://people.wgtn.ac.nz/aaron.chen">Aaron Chen 副教授</a></em></td>
+    <td>2023.02-2026.11</td>
+    <td><span class="exp-tag exp-tag--edu">教育</span> <a href="https://www.wgtn.ac.nz"><img class="svg" src="/images/VUW-logo.svg" width="65pt"></a> 计算机科学 博士&nbsp;&nbsp;<em>惠灵顿维多利亚大学，新西兰 惠灵顿</em><br><em>导师：<a href="https://people.wgtn.ac.nz/hui.ma">Hui Ma 副教授</a>、<a href="https://people.wgtn.ac.nz/aaron.chen">Aaron Chen 副教授</a></em></td>
   </tr>
   <tr>
     <td>2019.09-2021.12</td>

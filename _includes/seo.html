@@ -1,67 +1,37 @@
 <!-- begin SEO -->
-{% if site.url %}
-  {% assign seo_url = site.url %}
-{% endif %}
-{% assign seo_url = seo_url | default: site.github.url %}
+{% assign seo_url = site.url | default: site.github.url %}
+{% assign seo_title = site.title | append: " | AI Systems & Cloud Computing" %}
+{% assign seo_description = page.description | default: site.description %}
+{% assign seo_image = seo_url | append: "/images/android-chrome-512x512.png" %}
+{% assign seo_canonical = page.url | replace: "index.html", "" | prepend: seo_url %}
+{% assign scholar_url = site.author.googlescholar | default: "https://scholar.google.com/citations?user=Y3LoyksAAAAJ&hl=en" %}
 
-{% if site.url %}
-  {% assign canonical_url = page.url | replace: "index.html", "" | prepend: site.url %}
-{% endif %}
+<title>{{ seo_title }}</title>
 
-<title>{{ site.title }} - Homepage</title>
+<meta name="description" content="{{ seo_description | escape }}">
+<meta name="author" content="Zhengxin Fang">
+<meta name="keywords" content="Zhengxin Fang, 方正心, 方正心 个人主页, Zhengxin Fang homepage, cloud computing, AI infrastructure, microservice autoscaling, LLM inference serving, reinforcement learning, evolutionary computation, SIAT, 中国科学院深圳先进技术研究院">
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 
-{% assign seo_description = page.description | default: page.excerpt | default: site.description %}
-{% if seo_description %}
-  {% assign seo_description = seo_description | markdownify | strip_html | strip_newlines | escape_once %}
-{% endif %}
+<link rel="canonical" href="{{ seo_canonical }}">
+<link rel="me" href="{{ scholar_url }}">
+<link rel="me" href="https://github.com/sine-fandel">
 
-{% assign seo_author = page.author | default: page.author[0] | default: site.author[0] %}
-{% if seo_author %}
-  {% if seo_author.twitter %}
-    {% assign seo_author_twitter = seo_author.twitter %}
-  {% else %}
-    {% if site.data.authors and site.data.authors[seo_author] %}
-      {% assign seo_author_twitter = site.data.authors[seo_author].twitter  %}
-    {% else %}
-      {% assign seo_author_twitter = seo_author  %}
-    {% endif %}
-  {% endif %}
-  {% assign seo_author_twitter = seo_author_twitter | replace: "@", "" %}
-{% endif %}
-
-<meta property="og:locale" content="en">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="zh_CN">
+<meta property="og:type" content="profile">
 <meta property="og:site_name" content="{{ site.title }}">
-<meta property="og:title" content="{{ site.title }}">
+<meta property="og:title" content="{{ seo_title }}">
+<meta property="og:description" content="{{ seo_description | escape }}">
+<meta property="og:url" content="{{ seo_canonical }}">
+<meta property="og:image" content="{{ seo_image }}">
+<meta property="profile:first_name" content="Zhengxin">
+<meta property="profile:last_name" content="Fang">
 
-{% if seo_url %}
-  <link rel="canonical" href="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-  <meta property="og:url" content="{{ page.url | prepend: seo_url | replace: "/index.html", "/" }}">
-{% endif %}
-
-{% if page.excerpt %}
-  <meta property="og:description" content="{{ seo_description }}">
-{% endif %}
-
-{% if site.twitter.username %}
-  <meta name="twitter:site" content="@{{ site.twitter.username | replace: "@", "" }}">
-  <meta name="twitter:title" content="{{ page.title | default: site.title | markdownify | strip_html | strip_newlines | escape_once }}">
-  <meta name="twitter:description" content="{{ seo_description }}">
-  <meta name="twitter:url" content="{{ canonical_url }}">
-
-  {% if seo_author_twitter %}
-    <meta name="twitter:creator" content="@{{ seo_author_twitter }}">
-  {% endif %}
-{% endif %}
-
-{% if site.facebook %}
-  {% if site.facebook.publisher %}
-    <meta property="article:publisher" content="{{ site.facebook.publisher }}">
-  {% endif %}
-
-  {% if site.facebook.app_id %}
-    <meta property="fb:app_id" content="{{ site.facebook.app_id }}">
-  {% endif %}
-{% endif %}
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ seo_title }}">
+<meta name="twitter:description" content="{{ seo_description | escape }}">
+<meta name="twitter:image" content="{{ seo_image }}">
 
 {% if site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
@@ -72,4 +42,78 @@
 {% if site.baidu_site_verification %}
   <meta name="baidu-site-verification" content="{{ site.baidu_site_verification }}" />
 {% endif %}
+
+<!-- Structured data: helps Google connect the English and Chinese name variants
+     with the person, affiliation and research topics shown on this page. -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": "{{ seo_url }}/#person",
+      "name": "Zhengxin Fang",
+      "alternateName": ["方正心", "Fang Zhengxin"],
+      "url": "{{ seo_url }}/",
+      "image": "{{ seo_image }}",
+      "jobTitle": "Assistant Researcher / Postdoctoral Research Fellow",
+      "description": {{ seo_description | jsonify }},
+      "worksFor": {
+        "@type": "ResearchOrganization",
+        "name": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+        "alternateName": "中国科学院深圳先进技术研究院",
+        "url": "https://www.siat.ac.cn/"
+      },
+      "alumniOf": [
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Victoria University of Wellington",
+          "url": "https://www.wgtn.ac.nz/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "Harbin Institute of Technology",
+          "url": "https://www.hit.edu.cn/"
+        },
+        {
+          "@type": "CollegeOrUniversity",
+          "name": "South China Normal University",
+          "url": "https://www.scnu.edu.cn/"
+        }
+      ],
+      "knowsAbout": [
+        "Cloud Computing",
+        "AI Infrastructure",
+        "Agentic Workflow",
+        "Reinforcement Learning",
+        "Evolutionary Computation",
+        "Microservice Autoscaling",
+        "LLM Inference Serving"
+      ],
+      "sameAs": [
+        {{ scholar_url | jsonify }},
+        "https://github.com/sine-fandel",
+        "https://dblp.org/pid/319/1645.html"{% if site.author.orcid %},
+        {{ site.author.orcid | jsonify }}{% endif %}{% if site.author.researchgate %},
+        {{ site.author.researchgate | jsonify }}{% endif %}
+      ]
+    },
+    {
+      "@type": "ProfilePage",
+      "@id": "{{ seo_url }}/#profilepage",
+      "url": "{{ seo_url }}/",
+      "name": {{ seo_title | jsonify }},
+      "inLanguage": ["en", "zh-CN"],
+      "mainEntity": { "@id": "{{ seo_url }}/#person" }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "{{ seo_url }}/#website",
+      "url": "{{ seo_url }}/",
+      "name": "Zhengxin Fang (方正心)",
+      "author": { "@id": "{{ seo_url }}/#person" }
+    }
+  ]
+}
+</script>
 <!-- end SEO -->

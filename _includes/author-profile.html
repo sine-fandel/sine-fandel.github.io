@@ -11,10 +11,10 @@
   {% endif %}
 
   <div class="author__content">
-    <h3 class="author__name" itemprop="name">
+    <h1 class="author__name" itemprop="name">
       <span class="lang-inline" data-lang="en">{{ author.name }}{% if author.name_zh %} <span class="author__name-alt">({{ author.name_zh }})</span>{% endif %}</span>
       <span class="lang-inline" data-lang="zh">{{ author.name_zh | default: author.name }} <span class="author__name-alt">({{ author.name }})</span></span>
-    </h3>
+    </h1>
     {% if author.position %}
     <p class="author__position" itemprop="jobTitle">
       <span class="lang-inline" data-lang="en">{{ author.position }}</span>

@@ -6,8 +6,10 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-title                    : "Zhengxin Fang's Homepage"
-description              : ""
+title                    : "Zhengxin Fang (方正心)"
+description              : "Zhengxin Fang (方正心) is an Assistant Researcher at SIAT, CAS, working on cloud computing, AI infrastructure, microservice autoscaling and LLM inference serving."
+description_zh           : "方正心（Zhengxin Fang），中国科学院深圳先进技术研究院助理研究员 / 博士后，研究云计算、AI 基础设施、微服务弹性伸缩与大模型推理服务。"
+url                      : "https://sine-fandel.github.io"
 repository               : "sine-fandel/sine-fandel.github.io"
 # Google Scholar user id used by the sync workflow and the publication list.
 scholar_id               : "Y3LoyksAAAAJ"
@@ -43,6 +45,7 @@ author:
   employer_url     : "https://www.siat.ac.cn/"
   pubmed           :
   googlescholar    : "https://scholar.google.com/citations?user=Y3LoyksAAAAJ&hl=en"
+  dblp             : "https://dblp.org/pid/319/1645.html"
   email            : "zhengxin.fang@ecs.vuw.ac.nz"
   researchgate     :  # e.g., "https://www.researchgate.net/profile/yourprofile"
   uri              :

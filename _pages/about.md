@@ -2,6 +2,7 @@
 permalink: /
 title: ""
 excerpt: ""
+description: "Zhengxin Fang (方正心) is an Assistant Researcher at SIAT, CAS, working on cloud computing, AI infrastructure, microservice autoscaling and LLM inference serving."
 author_profile: true
 redirect_from: 
   - /about/
@@ -13,16 +14,16 @@ redirect_from:
 <h1 class="section-heading" id="-about-me" data-i18n="heading_about">&#128104;&zwj;&#128187; About Me</h1>
 
 <div data-lang="en">
-<p class="section-intro">I am an <strong>Assistant Researcher / Postdoctoral Research Fellow</strong> at the <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">Shenzhen Institutes of Advanced Technology</a>, Chinese Academy of Sciences.</p>
+<p class="section-intro">I am <strong>Zhengxin Fang (方正心)</strong>, an <strong>Assistant Researcher / Postdoctoral Research Fellow</strong> at the <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">Shenzhen Institutes of Advanced Technology</a>, Chinese Academy of Sciences.</p>
 <p class="section-intro">My work focuses on efficient and reliable AI systems, from resource allocation and autoscaling for microservice-based and AI workloads to LLM inference serving.</p>
-<p class="section-intro">I received my B.Eng in Network Engineering from South China Normal University, an M.Eng in Software Engineering from Harbin Institute of Technology, and a Ph.D. in Computer Science from Victoria University of Wellington. After my doctoral work, I joined the Shenzhen Institutes of Advanced Technology as an Assistant Researcher / Postdoctoral Researcher.</p>
+<p class="section-intro">I received my B.Eng in Network Engineering from South China Normal University, an M.Eng in Software Engineering from Harbin Institute of Technology, and a Ph.D. in Computer Science from Victoria University of Wellington. After my doctoral work, I joined the Shenzhen Institutes of Advanced Technology as an Assistant Researcher / Postdoctoral Research Fellow.</p>
 <p class="section-intro">My research has appeared in journals and conferences including IEEE Transactions on Services Computing, IEEE Transactions on Cloud Computing, Expert Systems with Applications, ICSOC and the Australasian Joint Conference on Artificial Intelligence, covering microservice autoscaling, container resource allocation, evolutionary computation and LLM inference serving. The full list is shown under Publications below.</p>
 <p class="section-intro">I also serve as a reviewer for <strong>TSC, TEVC, TNSE, TEC, ICML, AAAI, ICLR, ICWS, WISE, SSE and CEC</strong>.</p>
 </div>
 <div data-lang="zh">
-<p class="section-intro">我是<a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">中国科学院深圳先进技术研究院</a>的<strong>助理研究员 / 博士后</strong>。</p>
+<p class="section-intro">我是<strong>方正心（Zhengxin Fang）</strong>，<a href="https://www.siat.ac.cn/" target="_blank" rel="noopener">中国科学院深圳先进技术研究院</a>的<strong>助理研究员 / 博士后</strong>。</p>
 <p class="section-intro">研究重点面向高效可靠的 AI 系统，涵盖微服务与 AI 工作负载的资源调度、弹性伸缩以及大模型推理服务系统。</p>
-<p class="section-intro">先后在华南师范大学获网络工程学士、哈尔滨工业大学获软件工程硕士、惠灵顿维多利亚大学获计算机科学博士学位；博士毕业后进入中国科学院深圳先进技术研究院，担任助理研究员 / 博士后研究员。</p>
+<p class="section-intro">先后在华南师范大学获网络工程学士、哈尔滨工业大学获软件工程硕士、惠灵顿维多利亚大学获计算机科学博士学位；博士毕业后进入中国科学院深圳先进技术研究院，担任助理研究员 / 博士后。</p>
 <p class="section-intro">研究成果发表于 IEEE Transactions on Services Computing、IEEE Transactions on Cloud Computing、Expert Systems with Applications、ICSOC、Australasian Joint Conference on Artificial Intelligence 等期刊与会议，涵盖微服务弹性伸缩、容器资源调度、演化计算与大模型推理服务；完整论文列表见下方「论文发表」。</p>
 <p class="section-intro">同时担任 <strong>TSC、TEVC、TNSE、TEC、ICML、AAAI、ICLR、ICWS、WISE、SSE、CEC</strong> 等期刊与会议的审稿人。</p>
 </div>

@@ -57,7 +57,7 @@ redirect_from:
 <table class="positions-table"><tbody>
   <tr>
     <td>2026.12-Present</td>
-    <td><span class="exp-tag">Work</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="Shenzhen Institutes of Advanced Technology emblem"></a> <span class="exp-org">Shenzhen Institutes of Advanced Technology, CAS</span><span class="exp-sep">&middot;</span><span class="exp-unit">Institute of Advanced Computing and Digital Engineering (IACDE)</span><span class="exp-sep">&middot;</span><span class="exp-role">Assistant Researcher / Postdoctoral Researcher</span><span class="exp-sep">&middot;</span><span class="exp-loc">Shenzhen, China</span></td>
+    <td><span class="exp-tag">Work</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="Shenzhen Institutes of Advanced Technology emblem"></a> <span class="exp-org">Shenzhen Institutes of Advanced Technology, CAS</span><span class="exp-sep">&middot;</span><span class="exp-unit">Institute of Advanced Computing and Digital Engineering (IACDE)</span><span class="exp-sep">&middot;</span><span class="exp-role">Assistant Researcher / Postdoctoral Research Fellow</span><span class="exp-sep">&middot;</span><span class="exp-loc">Shenzhen, China</span></td>
   </tr>
   <tr>
     <td>2023.02-2026.11</td>
@@ -77,7 +77,7 @@ redirect_from:
 <table class="positions-table"><tbody>
   <tr>
     <td>2026.12-至今</td>
-    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="中国科学院深圳先进技术研究院院徽"></a> <span class="exp-org">中国科学院深圳先进技术研究院</span><span class="exp-sep">&middot;</span><span class="exp-unit">数字所</span><span class="exp-sep">&middot;</span><span class="exp-role">助理研究员 / 博士后研究员</span><span class="exp-sep">&middot;</span><span class="exp-loc">中国 深圳</span></td>
+    <td><span class="exp-tag">工作</span> <a href="https://www.siat.ac.cn/" target="_blank" rel="noopener"><img class="svg" src="/images/SIAT-logo.png" alt="中国科学院深圳先进技术研究院院徽"></a> <span class="exp-org">中国科学院深圳先进技术研究院</span><span class="exp-sep">&middot;</span><span class="exp-unit">数字所</span><span class="exp-sep">&middot;</span><span class="exp-role">助理研究员 / 博士后</span><span class="exp-sep">&middot;</span><span class="exp-loc">中国 深圳</span></td>
   </tr>
   <tr>
     <td>2023.02-2026.11</td>

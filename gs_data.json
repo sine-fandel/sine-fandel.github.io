@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "updated": "2026-11-23T04:01:00Z",
+  "updated": "2026-11-24T01:11:48Z",
   "source": "https://scholar.google.com/citations?user=Y3LoyksAAAAJ&hl=en",
   "fetch_strategy": "html",
   "scholar_id": "Y3LoyksAAAAJ",
@@ -13,14 +13,14 @@
     "Evolutionary Computation"
   ],
   "metrics": {
-    "citations": 89,
-    "citations_recent": 88,
+    "citations": 90,
+    "citations_recent": 89,
     "h_index": 5,
     "h_index_recent": 5,
     "i10_index": 2,
     "i10_index_recent": 2
   },
-  "citedby": 89,
+  "citedby": 90,
   "hindex": 5,
   "publication_count": 13,
   "publications": [
@@ -107,7 +107,7 @@
       "authors": "Z Fang, H Ma, G Chen, S Hartmann, C Wang",
       "venue": "Australasian Joint Conference on Artificial Intelligence, 86-97",
       "year": 2024,
-      "citations": 6,
+      "citations": 7,
       "type": "conference",
       "eprint_url": null,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Y3LoyksAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Y3LoyksAAAAJ:ufrVoPGSRksC"
@@ -198,7 +198,7 @@
       "title": "A communication-aware and energy-efficient genetic programming based method for dynamic resource allocation in clouds"
     },
     "Y3LoyksAAAAJ:ufrVoPGSRksC": {
-      "num_citations": 6,
+      "num_citations": 7,
       "title": "Leveraging llm in genetic programming hyper-heuristics for dynamic microservice deployment"
     },
     "Y3LoyksAAAAJ:WF5omc3nYNoC": {

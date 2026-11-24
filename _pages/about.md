@@ -36,6 +36,7 @@ redirect_from:
   <span class="interest-tag">AI Infra</span>
   <span class="interest-tag">Agentic Workflow</span>
   <span class="interest-tag">Reinforcement Learning</span>
+  <span class="interest-tag">Graph Neural Networks</span>
   <span class="interest-tag">Evolutionary Computation</span>
 </p>
 </div>
@@ -45,6 +46,7 @@ redirect_from:
   <span class="interest-tag">AI Infra</span>
   <span class="interest-tag">Agentic Workflow</span>
   <span class="interest-tag">强化学习</span>
+  <span class="interest-tag">图神经网络</span>
   <span class="interest-tag">演化计算</span>
 </p>
 </div>
